@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Display</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+</head>
+<body>
+
+    <select id="name-dropdown">
+        <option value="">Select a name</option>
+    </select>
+
+    <div id="data-container"></div>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'https://poe21c.github.io/script/gbo_mecha_full.csv', // Replace with your CSV URL
+                dataType: 'text',
+				mimeType: 'text/csv; charset=utf-8', // Specify UTF-8 encoding
+                success: function(data) {
+                    var rows = data.split('\n');
+                    var headers = rows[0].split(',');
+
+                    var nameIndex = headers.indexOf('名称');
+                    var addrIndex = headers.indexOf('属性');
+                    var phoneIndex = headers.indexOf('Cost');
+
+
+                    for (var i = 1; i < rows.length; i++) { // Start from 1 to skip headers
+                        var rowData = rows[i].split(',');
+                        if (rowData && rowData[nameIndex]) { // Check if row and name data exist
+                            $('#name-dropdown').append($('<option>', {
+                                value: rowData[nameIndex],
+                                text: rowData[nameIndex]
+                            }));
+                        }
+                    }
+
+                    $('#name-dropdown').change(function() {
+                        var selectedName = $(this).val();
+                        var selectedData = {};
+
+                        for (var i = 1; i < rows.length; i++) {
+                            var rowData = rows[i].split(',');
+                            if (rowData && rowData[nameIndex] === selectedName) {
+                                selectedData = rowData;
+                                break;
+                            }
+                        }
+
+                        var output = "";
+                        if (selectedData) {
+                            if (addrIndex !== -1 && selectedData[addrIndex]) {
+                                output += "<p><strong>属性:</strong> " + selectedData[addrIndex] + "</p>";
+                            }
+                            if (phoneIndex !== -1 && selectedData[phoneIndex]) {
+                                output += "<p><strong>Cost:</strong> " + selectedData[phoneIndex] + "</p>";
+                            }
+                        } else {
+                            output = "<p>No data found for selected name.</p>";
+                        }
+                        $('#data-container').html(output);
+                    });
+                },
+                error: function(error) {
+                    console.error("Error loading CSV:", error);
+                    $('#data-container').html("<p>Error loading data.</p>");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
