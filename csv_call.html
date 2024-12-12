@@ -33,19 +33,22 @@
                     var headers = rows[0].split(',');
 
                     var nameIndex = headers.indexOf('名称');
+					var lvIndex = headers.indexOf('LV'); // Index of "LV" column
                     var addrIndex = headers.indexOf('属性');
                     var phoneIndex = headers.indexOf('Cost');
 
 
-                    for (var i = 1; i < rows.length; i++) { // Start from 1 to skip headers
-                        var rowData = rows[i].split(',');
-                        if (rowData && rowData[nameIndex]) { // Check if row and name data exist
-                            $('#name-dropdown').append($('<option>', {
-                                value: rowData[nameIndex],
-                                text: rowData[nameIndex]
-                            }));
-                        }
-                    }
+                    for (var i = 1; i < rows.length; i++) {
+						var rowData = rows[i].split(',');
+
+						// Check if LV is 1 *before* adding to dropdown
+						if (rowData && rowData[lvIndex] === '1' && rowData[nameIndex]) { 
+							$('#name-dropdown').append($('<option>', {
+								value: rowData[nameIndex],
+								text: rowData[nameIndex]
+							}));
+						}
+					}
 
                     $('#name-dropdown').change(function() {
                         var selectedName = $(this).val();
