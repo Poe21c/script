@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Display</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+        /* Styles to prevent text wrapping under the color div */
+        th {
+            display: flex;
+            align-items: center;
+        }
+        .color {
+            margin-right: 8px; /* Add some space between color and text */
+        }
+        @media only screen and (max-width: 400px) {
+            th {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .color {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<h1>Name</h1>
+<span class="level">LV 1</span>
+
+<select id="name-dropdown">
+    <option value="">Select a name</option>
+</select>
+
+<div id="data-container"></div>
+
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: 'https://poe21c.github.io/script/gbo_mecha_full.csv',
+            dataType: 'text',
+            mimeType: 'text/csv; charset=utf-8',
+            success: function(data) {
+                var rows = data.split('\n');
+                var headers = rows[0].split(',');
+
+                var nameIndex = headers.indexOf('名称');
+                var lvIndex = headers.indexOf('LV');
+                var addrIndex = headers.indexOf('属性');
+                var costIndex = headers.indexOf('Cost');
+
+                for (var i = 1; i < rows.length; i++) {
+                    var rowData = rows[i].split(',');
+                    if (rowData && rowData[lvIndex] === '1' && rowData[nameIndex]) {
+                        $('#name-dropdown').append($('<option>', {
+                            value: rowData[nameIndex],
+                            text: rowData[nameIndex]
+                        }));
+                    }
+                }
+
+                $('#name-dropdown').change(function() {
+                    var selectedName = $(this).val();
+                    var selectedData = {};
+
+                    for (var i = 1; i < rows.length; i++) {
+                        var rowData = rows[i].split(',');
+                        if (rowData && rowData[nameIndex] === selectedName) {
+                            selectedData = rowData;
+                            break;
+                        }
+                    }
+
+                    /*
+					var output = "";
+                    if (selectedData) {
+                        if (addrIndex !== -1 && selectedData[addrIndex]) {
+                            output += "<p><strong>属性:</strong> " + selectedData[addrIndex] + "</p>";
+                        }
+                        if (costIndex !== -1 && selectedData[costIndex]) {
+                            output += "<p><strong>Cost:</strong> " + selectedData[costIndex] + "</p>";
+                        }                        
+                    } else {
+                        output = "<p>No data found for selected name.</p>";
+                    }
+                    $('#data-container').html(output);
+					*/
+					
+					$('h1').text(selectedData[nameIndex]);
+					$('.col2').text(selectedData[addrIndex]);
+					$('.col3').text(selectedData[costIndex]);
+                });
+            },
+            error: function(error) {
+                console.error("Error loading CSV:", error);
+                $('#data-container').html("<p>Error loading data.</p>");
+            }
+        });
+    });
+</script>
+
+<table>
+<tbody>
+<tr>
+    <th><div class="color" style="background-color: #1E7086;"></div>COST</th>
+    <td class="col2">AA</td>
+    <td class="col3">BB</td>
+    <td class="col4">CC</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
