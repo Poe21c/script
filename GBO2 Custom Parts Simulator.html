@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://ec2-3-25-221-203.ap-southeast-2.compute.amazonaws.com:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./GBO2 Custom Parts Simulator_files/layout.css" data-precedence="next_static/css/app/layout.css"><link rel="preload" as="script" fetchpriority="low" href="./GBO2 Custom Parts Simulator_files/webpack.js.download"><script src="./GBO2 Custom Parts Simulator_files/main-app.js.download" async=""></script><script src="./GBO2 Custom Parts Simulator_files/app-pages-internals.js.download" async=""></script><script src="./GBO2 Custom Parts Simulator_files/page.js.download" async=""></script><meta name="next-size-adjust" content=""><title>GBO2 Custom Parts Simulator</title><meta name="description" content="GBO2 Custom Parts Simulator"><link rel="icon" href="http://ec2-3-25-221-203.ap-southeast-2.compute.amazonaws.com:3000/favicon.ico" type="image/x-icon" sizes="16x16"><script src="./GBO2 Custom Parts Simulator_files/polyfills.js.download" nomodule=""></script><link rel="preload" href="http://ec2-3-25-221-203.ap-southeast-2.compute.amazonaws.com:3000/_next/static/media/569ce4b8f30dc480-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="http://ec2-3-25-221-203.ap-southeast-2.compute.amazonaws.com:3000/_next/static/media/93f479601ee12b01-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" as="image" imagesrcset="/_next/image?url=%2Funit_image%2FMSR00101.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Funit_image%2FMSR00101.png&amp;w=1080&amp;q=75 2x"><link rel="preload" as="image" imagesrcset="/_next/image?url=%2Funit_image%2FMSB00101.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Funit_image%2FMSB00101.png&amp;w=1080&amp;q=75 2x"></head><body class="__variable_4d318d __variable_ea5f4b antialiased"><div><header><h1>バトオペ２カスタムパーツシミュレーター</h1></header><section><table><tbody><tr><td style="font-size: 0.9rem;">カテゴリ：</td><td><div class="user-params-dropdown"><select><option value="-1">すべて</option><option value="0">強襲</option><option value="1">汎用</option><option value="2">支援</option></select></div></td></tr><tr><td style="font-size: 0.9rem;">コスト：</td><td><div class="user-params-dropdown"><select><option value="-1">すべて</option><option value="100">100</option><option value="150">150</option><option value="200">200</option><option value="250">250</option><option value="300">300</option><option value="350">350</option><option value="400">400</option><option value="450">450</option><option value="500">500</option><option value="550">550</option><option value="600">600</option><option value="650">650</option><option value="700">700</option></select></div></td></tr><tr><td style="font-size: 0.9rem;">機体：</td><td><div class="user-params-dropdown"><select><option value="MSB001_1">ザクⅡ Lv1</option><option value="MSB001_2">ザクⅡ Lv2</option><option value="MSB001_3">ザクⅡ Lv3</option><option value="MSB001_4">ザクⅡ Lv4</option><option value="MSB001_5">ザクⅡ Lv5</option><option value="MSB002_1">ジム Lv1</option><option value="MSB002_2">ジム Lv2</option><option value="MSB002_3">ジム Lv3</option><option value="MSB002_4">ジム Lv4</option><option value="MSB002_5">ジム Lv5</option><option value="MSB003_1">ジム・トレーナー Lv1</option><option value="MSB003_2">ジム・トレーナー Lv2</option><option value="MSB003_3">ジム・トレーナー Lv3</option><option value="MSB004_1">ザクⅡFS型 Lv1</option><option value="MSB004_2">ザクⅡFS型 Lv2</option><option value="MSB004_3">ザクⅡFS型 Lv3</option><option value="MSB004_4">ザクⅡFS型 Lv4</option><option value="MSB004_5">ザクⅡFS型 Lv5</option><option value="MSB005_1">陸戦型ジム Lv1</option><option value="MSB005_2">陸戦型ジム Lv2</option><option value="MSB005_3">陸戦型ジム Lv3</option><option value="MSB005_4">陸戦型ジム Lv4</option><option value="MSB005_5">陸戦型ジム Lv5</option><option value="MSB006_1">ゲム・カモフ Lv1</option><option value="MSB006_2">ゲム・カモフ Lv2</option><option value="MSB006_3">ゲム・カモフ Lv3</option><option value="MSB006_4">ゲム・カモフ Lv4</option><option value="MSB006_5">ゲム・カモフ Lv5</option><option value="MSB007_1">ザク強行偵察型 Lv1</option><option value="MSB007_2">ザク強行偵察型 Lv2</option><option value="MSB007_3">ザク強行偵察型 Lv3</option><option value="MSB008_1">ザク・デザートタイプ Lv1</option><option value="MSB008_2">ザク・デザートタイプ Lv2</option><option value="MSB008_3">ザク・デザートタイプ Lv3</option><option value="MSB008_4">ザク・デザートタイプ Lv4</option><option value="MSB009_1">ザク・マインレイヤー Lv1</option><option value="MSB009_2">ザク・マインレイヤー Lv2</option><option value="MSB009_3">ザク・マインレイヤー Lv3</option><option value="MSB009_4">ザク・マインレイヤー Lv4</option><option value="MSB010_1">ザクⅡS型 Lv1</option><option value="MSB010_2">ザクⅡS型 Lv2</option><option value="MSB010_3">ザクⅡS型 Lv3</option><option value="MSB010_4">ザクⅡS型 Lv4</option><option value="MSB011_1">ジム改 Lv1</option><option value="MSB011_2">ジム改 Lv2</option><option value="MSB011_3">ジム改 Lv3</option><option value="MSB011_4">ジム改 Lv4</option><option value="MSB012_1">ジム・ナイトシーカー Lv1</option><option value="MSB012_2">ジム・ナイトシーカー Lv2</option><option value="MSB012_3">ジム・ナイトシーカー Lv3</option><option value="MSB012_4">ジム・ナイトシーカー Lv4</option><option value="MSB013_1">ザク・マリンタイプ Lv1</option><option value="MSB013_2">ザク・マリンタイプ Lv2</option><option value="MSB013_3">ザク・マリンタイプ Lv3</option><option value="MSB013_4">ザク・マリンタイプ Lv4</option><option value="MSB014_1">ザクⅡ改 Lv1</option><option value="MSB014_2">ザクⅡ改 Lv2</option><option value="MSB014_3">ザクⅡ改 Lv3</option><option value="MSB014_4">ザクⅡ改 Lv4</option><option value="MSB015_1">ジム寒冷地仕様 Lv1</option><option value="MSB015_2">ジム寒冷地仕様 Lv2</option><option value="MSB015_3">ジム寒冷地仕様 Lv3</option><option value="MSB015_4">ジム寒冷地仕様 Lv4</option><option value="MSB016_1">ジム・コマンド Lv1</option><option value="MSB016_2">ジム・コマンド Lv2</option><option value="MSB016_3">ジム・コマンド Lv3</option><option value="MSB016_4">ジム・コマンド Lv4</option><option value="MSB017_1">ジム・コマンド宇宙戦仕様 Lv1</option><option value="MSB017_2">ジム・コマンド宇宙戦仕様 Lv2</option><option value="MSB017_3">ジム・コマンド宇宙戦仕様 Lv3</option><option value="MSB017_4">ジム・コマンド宇宙戦仕様 Lv4</option><option value="MSB018_1">装甲強化型ジム Lv1</option><option value="MSB018_2">装甲強化型ジム Lv2</option><option value="MSB018_3">装甲強化型ジム Lv3</option><option value="MSB018_4">装甲強化型ジム Lv4</option><option value="MSB019_1">ドラッツェ改 Lv1</option><option value="MSB019_2">ドラッツェ改 Lv2</option><option value="MSB019_3">ドラッツェ改 Lv3</option><option value="MSB020_1">ブグ（RR）【GTO】 Lv1</option><option value="MSB021_1">陸戦型ジム［WR装備］ Lv1</option><option value="MSB022_1">アクア・ジム Lv1</option><option value="MSB022_2">アクア・ジム Lv2</option><option value="MSB022_3">アクア・ジム Lv3</option><option value="MSB022_4">アクア・ジム Lv4</option><option value="MSB023_1">アッガイ火力型A【TB】 Lv1</option><option value="MSB023_2">アッガイ火力型A【TB】 Lv2</option><option value="MSB024_1">イフリート Lv1</option><option value="MSB024_2">イフリート Lv2</option><option value="MSB024_3">イフリート Lv3</option><option value="MSB024_4">イフリート Lv4</option><option value="MSB025_1">グフ重装型 Lv1</option><option value="MSB025_2">グフ重装型 Lv2</option><option value="MSB026_1">グフ（VD） Lv1</option><option value="MSB026_2">グフ（VD） Lv2</option><option value="MSB026_3">グフ（VD） Lv3</option><option value="MSB026_4">グフ（VD） Lv4</option><option value="MSB027_1">高機動型ザク Lv1</option><option value="MSB027_2">高機動型ザク Lv2</option><option value="MSB027_3">高機動型ザク Lv3</option><option value="MSB028_1">ザク・ハーフキャノン（MB） Lv1</option><option value="MSB028_2">ザク・ハーフキャノン（MB） Lv2</option><option value="MSB029_1">ザクⅠ（GS） Lv1</option><option value="MSB029_2">ザクⅠ（GS） Lv2</option><option value="MSB029_3">ザクⅠ（GS） Lv3</option><option value="MSB029_4">ザクⅠ（GS） Lv4</option><option value="MSB030_1">ザクⅡ改［フリッツヘルム仕様］ Lv1</option><option value="MSB030_2">ザクⅡ改［フリッツヘルム仕様］ Lv2</option><option value="MSB030_3">ザクⅡ改［フリッツヘルム仕様］ Lv3</option><option value="MSB030_4">ザクⅡ改［フリッツヘルム仕様］ Lv4</option><option value="MSB031_1">ザクⅡ後期型 Lv1</option><option value="MSB031_2">ザクⅡ後期型 Lv2</option><option value="MSB031_3">ザクⅡ後期型 Lv3</option><option value="MSB031_4">ザクⅡ後期型 Lv4</option><option value="MSB032_1">ジムⅡ Lv1</option><option value="MSB032_2">ジムⅡ Lv2</option><option value="MSB032_3">ジムⅡ Lv3</option><option value="MSB033_1">ジム［WD隊仕様］ Lv1</option><option value="MSB033_2">ジム［WD隊仕様］ Lv2</option><option value="MSB033_3">ジム［WD隊仕様］ Lv3</option><option value="MSB033_4">ジム［WD隊仕様］ Lv4</option><option value="MSB034_1">装甲強化型ジム（BA） Lv1</option><option value="MSB035_1">ドズル・ザビ専用ザクⅡ Lv1</option><option value="MSB035_2">ドズル・ザビ専用ザクⅡ Lv2</option><option value="MSB035_3">ドズル・ザビ専用ザクⅡ Lv3</option><option value="MSB035_4">ドズル・ザビ専用ザクⅡ Lv4</option><option value="MSB036_1">ドム Lv1</option><option value="MSB036_2">ドム Lv2</option><option value="MSB036_3">ドム Lv3</option><option value="MSB036_4">ドム Lv4</option><option value="MSB037_1">ドム・トロピカルテストタイプ Lv1</option><option value="MSB037_2">ドム・トロピカルテストタイプ Lv2</option><option value="MSB037_3">ドム・トロピカルテストタイプ Lv3</option><option value="MSB038_1">陸戦型ガンダム Lv1</option><option value="MSB038_2">陸戦型ガンダム Lv2</option><option value="MSB038_3">陸戦型ガンダム Lv3</option><option value="MSB038_4">陸戦型ガンダム Lv4</option><option value="MSB038_5">陸戦型ガンダム Lv5</option><option value="MSB039_1">陸戦高機動型ザク Lv1</option><option value="MSB039_2">陸戦高機動型ザク Lv2</option><option value="MSB039_3">陸戦高機動型ザク Lv3</option><option value="MSB040_1">リック・ドム Lv1</option><option value="MSB040_2">リック・ドム Lv2</option><option value="MSB040_3">リック・ドム Lv3</option><option value="MSB040_4">リック・ドム Lv4</option><option value="MSB041_1">アクト・ザク Lv1</option><option value="MSB041_2">アクト・ザク Lv2</option><option value="MSB041_3">アクト・ザク Lv3</option><option value="MSB041_4">アクト・ザク Lv4</option><option value="MSB042_1">ガッシャ Lv1</option><option value="MSB042_2">ガッシャ Lv2</option><option value="MSB042_3">ガッシャ Lv3</option><option value="MSB042_4">ガッシャ Lv4</option><option value="MSB043_1">ガンダムEz8 Lv1</option><option value="MSB043_2">ガンダムEz8 Lv2</option><option value="MSB043_3">ガンダムEz8 Lv3</option><option value="MSB043_4">ガンダムEz8 Lv4</option><option value="MSB043_5">ガンダムEz8 Lv5</option><option value="MSB044_1">グフ飛行試験型 Lv1</option><option value="MSB044_2">グフ飛行試験型 Lv2</option><option value="MSB045_1">ゲルググ Lv1</option><option value="MSB045_2">ゲルググ Lv2</option><option value="MSB045_3">ゲルググ Lv3</option><option value="MSB045_4">ゲルググ Lv4</option><option value="MSB046_1">ザクⅡ［シュトゥッツァー］ Lv1</option><option value="MSB046_2">ザクⅡ［シュトゥッツァー］ Lv2</option><option value="MSB047_1">ジム・インターセプトカスタムFB Lv1</option><option value="MSB047_2">ジム・インターセプトカスタムFB Lv2</option><option value="MSB047_3">ジム・インターセプトカスタムFB Lv3</option><option value="MSB048_1">ジム・レイド Lv1</option><option value="MSB048_2">ジム・レイド Lv2</option><option value="MSB049_1">水中型ガンダム Lv1</option><option value="MSB049_2">水中型ガンダム Lv2</option><option value="MSB050_1">スライフレイル Lv1</option><option value="MSB051_1">スレイヴ・レイス Lv1</option><option value="MSB051_2">スレイヴ・レイス Lv2</option><option value="MSB051_3">スレイヴ・レイス Lv3</option><option value="MSB051_4">スレイヴ・レイス Lv4</option><option value="MSB052_1">ゾゴック Lv1</option><option value="MSB052_2">ゾゴック Lv2</option><option value="MSB052_3">ゾゴック Lv3</option><option value="MSB052_4">ゾゴック Lv4</option><option value="MSB053_1">ドム・トローペン Lv1</option><option value="MSB053_2">ドム・トローペン Lv2</option><option value="MSB053_3">ドム・トローペン Lv3</option><option value="MSB053_4">ドム・トローペン Lv4</option><option value="MSB054_1">ハイゴッグ Lv1</option><option value="MSB054_2">ハイゴッグ Lv2</option><option value="MSB054_3">ハイゴッグ Lv3</option><option value="MSB054_4">ハイゴッグ Lv4</option><option value="MSB055_1">パワード・ジム Lv1</option><option value="MSB055_2">パワード・ジム Lv2</option><option value="MSB055_3">パワード・ジム Lv3</option><option value="MSB055_4">パワード・ジム Lv4</option><option value="MSB055_5">パワード・ジム Lv5</option><option value="MSB056_1">ペイルライダー・キャバルリー Lv1</option><option value="MSB056_2">ペイルライダー・キャバルリー Lv2</option><option value="MSB056_3">ペイルライダー・キャバルリー Lv3</option><option value="MSB056_4">ペイルライダー・キャバルリー Lv4</option><option value="MSB057_1">リック・ドムⅡ Lv1</option><option value="MSB057_2">リック・ドムⅡ Lv2</option><option value="MSB057_3">リック・ドムⅡ Lv3</option><option value="MSB058_1">ガザC Lv1</option><option value="MSB058_2">ガザC Lv2</option><option value="MSB059_1">ガルバルディα Lv1</option><option value="MSB059_2">ガルバルディα Lv2</option><option value="MSB059_3">ガルバルディα Lv3</option><option value="MSB059_4">ガルバルディα Lv4</option><option value="MSB060_1">ガンキャノン重装型タイプD Lv1</option><option value="MSB060_2">ガンキャノン重装型タイプD Lv2</option><option value="MSB060_3">ガンキャノン重装型タイプD Lv3</option><option value="MSB060_4">ガンキャノン重装型タイプD Lv4</option><option value="MSB061_1">ガンダム Lv1</option><option value="MSB061_2">ガンダム Lv2</option><option value="MSB061_3">ガンダム Lv3</option><option value="MSB061_4">ガンダム Lv4</option><option value="MSB061_5">ガンダム Lv5</option><option value="MSB062_1">ガンダムEX Lv1</option><option value="MSB063_1">ギャン・エーオース Lv1</option><option value="MSB063_2">ギャン・エーオース Lv2</option><option value="MSB063_3">ギャン・エーオース Lv3</option><option value="MSB063_4">ギャン・エーオース Lv4</option><option value="MSB064_1">グフ［Fユニット装備］【TB】 Lv1</option><option value="MSB064_2">グフ［Fユニット装備］【TB】 Lv2</option><option value="MSB065_1">高機動型ザク後期型 Lv1</option><option value="MSB065_2">高機動型ザク後期型 Lv2</option><option value="MSB065_3">高機動型ザク後期型 Lv3</option><option value="MSB065_4">高機動型ザク後期型 Lv4</option><option value="MSB066_1">ザクダイバー Lv1</option><option value="MSB066_2">ザクダイバー Lv2</option><option value="MSB067_1">ジム・カスタム Lv1</option><option value="MSB067_2">ジム・カスタム Lv2</option><option value="MSB067_3">ジム・カスタム Lv3</option><option value="MSB067_4">ジム・カスタム Lv4</option><option value="MSB068_1">ジム・スナイパーⅡ［WD隊仕様］ Lv1</option><option value="MSB068_2">ジム・スナイパーⅡ［WD隊仕様］ Lv2</option><option value="MSB068_3">ジム・スナイパーⅡ［WD隊仕様］ Lv3</option><option value="MSB068_4">ジム・スナイパーⅡ［WD隊仕様］ Lv4</option><option value="MSB069_1">ジム・ドミナンス Lv1</option><option value="MSB069_2">ジム・ドミナンス Lv2</option><option value="MSB070_1">ジム・ドミナンス［水中用装備］ Lv1</option><option value="MSB071_1">ジムⅢ Lv1</option><option value="MSB071_2">ジムⅢ Lv2</option><option value="MSB071_3">ジムⅢ Lv3</option><option value="MSB071_4">ジムⅢ Lv4</option><option value="MSB072_1">ジーライン・スタンダードアーマー Lv1</option><option value="MSB072_2">ジーライン・スタンダードアーマー Lv2</option><option value="MSB072_3">ジーライン・スタンダードアーマー Lv3</option><option value="MSB072_4">ジーライン・スタンダードアーマー Lv4</option><option value="MSB073_1">先行量産型ゲルググ Lv1</option><option value="MSB073_2">先行量産型ゲルググ Lv2</option><option value="MSB073_3">先行量産型ゲルググ Lv3</option><option value="MSB073_4">先行量産型ゲルググ Lv4</option><option value="MSB073_5">先行量産型ゲルググ Lv5</option><option value="MSB075_1">ヅダF Lv1</option><option value="MSB075_2">ヅダF Lv2</option><option value="MSB075_3">ヅダF Lv3</option><option value="MSB075_4">ヅダF Lv4</option><option value="MSB074_1">ディザート・ザク Lv1</option><option value="MSB074_2">ディザート・ザク Lv2</option><option value="MSB076_1">ネモ Lv1</option><option value="MSB076_2">ネモ Lv2</option><option value="MSB076_3">ネモ Lv3</option><option value="MSB076_4">ネモ Lv4</option><option value="MSB077_1">ハイザック Lv1</option><option value="MSB077_2">ハイザック Lv2</option><option value="MSB077_3">ハイザック Lv3</option><option value="MSB078_1">ブルーディスティニー3号機 Lv1</option><option value="MSB078_2">ブルーディスティニー3号機 Lv2</option><option value="MSB078_3">ブルーディスティニー3号機 Lv3</option><option value="MSB078_4">ブルーディスティニー3号機 Lv4</option><option value="MSB079_1">ペイルライダー［空間戦仕様］ Lv1</option><option value="MSB079_2">ペイルライダー［空間戦仕様］ Lv2</option><option value="MSB079_3">ペイルライダー［空間戦仕様］ Lv3</option><option value="MSB079_4">ペイルライダー［空間戦仕様］ Lv4</option><option value="MSB080_1">ペイルライダー［陸戦重装備仕様］ Lv1</option><option value="MSB080_2">ペイルライダー［陸戦重装備仕様］ Lv2</option><option value="MSB080_3">ペイルライダー［陸戦重装備仕様］ Lv3</option><option value="MSB080_4">ペイルライダー［陸戦重装備仕様］ Lv4</option><option value="MSB081_1">ペズン・ドワッジ Lv1</option><option value="MSB081_2">ペズン・ドワッジ Lv2</option><option value="MSB081_3">ペズン・ドワッジ Lv3</option><option value="MSB081_4">ペズン・ドワッジ Lv4</option><option value="MSB081_5">ペズン・ドワッジ Lv5</option><option value="MSB082_1">陸戦型ゲルググ（VD） Lv1</option><option value="MSB082_2">陸戦型ゲルググ（VD） Lv2</option><option value="MSB082_3">陸戦型ゲルググ（VD） Lv3</option><option value="MSB082_4">陸戦型ゲルググ（VD） Lv4</option><option value="MSB083_1">リック・ドム［シュトゥッツァー］ Lv1</option><option value="MSB083_2">リック・ドム［シュトゥッツァー］ Lv2</option><option value="MSB084_1">アレックス Lv1</option><option value="MSB084_2">アレックス Lv2</option><option value="MSB084_3">アレックス Lv3</option><option value="MSB084_4">アレックス Lv4</option><option value="MSB085_1">イフリート・イェーガー Lv1</option><option value="MSB085_2">イフリート・イェーガー Lv2</option><option value="MSB086_1">エンゲージゼロ Lv1</option><option value="MSB087_1">ガザD Lv1</option><option value="MSB087_2">ガザD Lv2</option><option value="MSB088_1">ガ・ゾウム Lv1</option><option value="MSB088_2">ガ・ゾウム Lv2</option><option value="MSB089_1">ガルバルディβ Lv1</option><option value="MSB089_2">ガルバルディβ Lv2</option><option value="MSB089_3">ガルバルディβ Lv3</option><option value="MSB090_1">ガンダム4号機 Lv1</option><option value="MSB090_2">ガンダム4号機 Lv2</option><option value="MSB090_3">ガンダム4号機 Lv3</option><option value="MSB090_4">ガンダム4号機 Lv4</option><option value="MSB091_1">ゲルググ［シュトゥッツァー］ Lv1</option><option value="MSB091_2">ゲルググ［シュトゥッツァー］ Lv2</option><option value="MSB093_1">ケンプファー Lv1</option><option value="MSB093_2">ケンプファー Lv2</option><option value="MSB093_3">ケンプファー Lv3</option><option value="MSB093_4">ケンプファー Lv4</option><option value="MSB094_1">高機動型ゲルググ Lv1</option><option value="MSB094_2">高機動型ゲルググ Lv2</option><option value="MSB094_3">高機動型ゲルググ Lv3</option><option value="MSB094_4">高機動型ゲルググ Lv4</option><option value="MSB094_5">高機動型ゲルググ Lv5</option><option value="MSB095_1">高機動型ゲルググ（UL） Lv1</option><option value="MSB095_2">高機動型ゲルググ（UL） Lv2</option><option value="MSB095_3">高機動型ゲルググ（UL） Lv3</option><option value="MSB095_4">高機動型ゲルググ（UL） Lv4</option><option value="MSB096_1">高機動型ゲルググ（VG） Lv1</option><option value="MSB096_2">高機動型ゲルググ（VG） Lv2</option><option value="MSB097_1">ザク・マシーナリー Lv1</option><option value="MSB097_2">ザク・マシーナリー Lv2</option><option value="MSB098_1">ジェダ Lv1</option><option value="MSB098_2">ジェダ Lv2</option><option value="MSB099_1">ジム・スパルタン（RG） Lv1</option><option value="MSB099_2">ジム・スパルタン（RG） Lv2</option><option value="MSB100_1">ジムⅢパワード Lv1</option><option value="MSB100_2">ジムⅢパワード Lv2</option><option value="MSB101_1">ドワス改 Lv1</option><option value="MSB101_2">ドワス改 Lv2</option><option value="MSB102_1">ドワッジ改 Lv1</option><option value="MSB102_2">ドワッジ改 Lv2</option><option value="MSB102_3">ドワッジ改 Lv3</option><option value="MSB102_4">ドワッジ改 Lv4</option><option value="MSB103_1">ネロ Lv1</option><option value="MSB103_2">ネロ Lv2</option><option value="MSB104_1">バーザム Lv1</option><option value="MSB104_2">バーザム Lv2</option><option value="MSB104_3">バーザム Lv3</option><option value="MSB104_4">バーザム Lv4</option><option value="MSB105_1">フルアーマーガンダム陸戦タイプ Lv1</option><option value="MSB105_2">フルアーマーガンダム陸戦タイプ Lv2</option><option value="MSB106_1">ペイルライダー（VG） Lv1</option><option value="MSB106_2">ペイルライダー（VG） Lv2</option><option value="MSB107_1">マラサイ Lv1</option><option value="MSB107_2">マラサイ Lv2</option><option value="MSB108_1">ガザG Lv1</option><option value="MSB108_2">ガザG Lv2</option><option value="MSB109_1">ガズアル Lv1</option><option value="MSB109_2">ガズアル Lv2</option><option value="MSB109_3">ガズアル Lv3</option><option value="MSB109_4">ガズアル Lv4</option><option value="MSB110_1">カプール Lv1</option><option value="MSB110_2">カプール Lv2</option><option value="MSB110_3">カプール Lv3</option><option value="MSB110_4">カプール Lv4</option><option value="MSB111_1">ガルスJ Lv1</option><option value="MSB111_2">ガルスJ Lv2</option><option value="MSB111_3">ガルスJ Lv3</option><option value="MSB111_4">ガルスJ Lv4</option><option value="MSB112_1">ガルバルディβ（FS） Lv1</option><option value="MSB112_2">ガルバルディβ（FS） Lv2</option><option value="MSB113_1">ガンダム4号機Bst Lv1</option><option value="MSB113_2">ガンダム4号機Bst Lv2</option><option value="MSB113_3">ガンダム4号機Bst Lv3</option><option value="MSB113_4">ガンダム4号機Bst Lv4</option><option value="MSB114_1">ガンダム7号機 Lv1</option><option value="MSB115_1">ガンダムMk-Ⅱ Lv1</option><option value="MSB115_2">ガンダムMk-Ⅱ Lv2</option><option value="MSB115_3">ガンダムMk-Ⅱ Lv3</option><option value="MSB115_4">ガンダムMk-Ⅱ Lv4</option><option value="MSB116_1">ギャプランTR-5 Lv1</option><option value="MSB116_2">ギャプランTR-5 Lv2</option><option value="MSB117_1">ギラ・ドーガ Lv1</option><option value="MSB117_2">ギラ・ドーガ Lv2</option><option value="MSB117_3">ギラ・ドーガ Lv3</option><option value="MSB117_4">ギラ・ドーガ Lv4</option><option value="MSB118_1">高機動型ケンプファー Lv1</option><option value="MSB118_2">高機動型ケンプファー Lv2</option><option value="MSB119_1">サイコ・ザク【TB】 Lv1</option><option value="MSB119_2">サイコ・ザク【TB】 Lv2</option><option value="MSB119_3">サイコ・ザク【TB】 Lv3</option><option value="MSB120_1">ジェガン Lv1</option><option value="MSB120_2">ジェガン Lv2</option><option value="MSB120_3">ジェガン Lv3</option><option value="MSB120_4">ジェガン Lv4</option><option value="MSB121_1">ジェガンD型 Lv1</option><option value="MSB121_2">ジェガンD型 Lv2</option><option value="MSB122_1">ズサ［袖付き仕様］ Lv1</option><option value="MSB122_2">ズサ［袖付き仕様］ Lv2</option><option value="MSB123_1">ドルメル・ドゥーエ Lv1</option><option value="MSB124_1">バイアラン Lv1</option><option value="MSB124_2">バイアラン Lv2</option><option value="MSB125_1">バーザム改 Lv1</option><option value="MSB125_2">バーザム改 Lv2</option><option value="MSB126_1">ヘイズル改 Lv1</option><option value="MSB126_2">ヘイズル改 Lv2</option><option value="MSB127_1">メタス［重装備仕様］ Lv1</option><option value="MSB127_2">メタス［重装備仕様］ Lv2</option><option value="MSB127_3">メタス［重装備仕様］ Lv3</option><option value="MSB128_1">リゲルグ Lv1</option><option value="MSB128_2">リゲルグ Lv2</option><option value="MSB128_3">リゲルグ Lv3</option><option value="MSB128_4">リゲルグ Lv4</option><option value="MSB129_1">リック・ディアス Lv1</option><option value="MSB129_2">リック・ディアス Lv2</option><option value="MSB129_3">リック・ディアス Lv3</option><option value="MSB129_4">リック・ディアス Lv4</option><option value="MSB130_1">FA・ストライカー・カスタム Lv1</option><option value="MSB130_2">FA・ストライカー・カスタム Lv2</option><option value="MSB131_1">アッシマー Lv1</option><option value="MSB131_2">アッシマー Lv2</option><option value="MSB131_3">アッシマー Lv3</option><option value="MSB131_4">アッシマー Lv4</option><option value="MSB132_1">イフリート・シュナイド Lv1</option><option value="MSB132_2">イフリート・シュナイド Lv2</option><option value="MSB132_3">イフリート・シュナイド Lv3</option><option value="MSB132_4">イフリート・シュナイド Lv4</option><option value="MSB133_1">ガンダム試作1号機 Lv1</option><option value="MSB133_2">ガンダム試作1号機 Lv2</option><option value="MSB133_3">ガンダム試作1号機 Lv3</option><option value="MSB133_4">ガンダム試作1号機 Lv4</option><option value="MSB134_1">ガンダム試作1号機［アクア装備］ Lv1</option><option value="MSB134_2">ガンダム試作1号機［アクア装備］ Lv2</option><option value="MSB135_1">ガンダム試作1号機Fb Lv1</option><option value="MSB135_2">ガンダム試作1号機Fb Lv2</option><option value="MSB135_3">ガンダム試作1号機Fb Lv3</option><option value="MSB135_4">ガンダム試作1号機Fb Lv4</option><option value="MSB136_1">ガンダム試作3号機ステイメン Lv1</option><option value="MSB136_2">ガンダム試作3号機ステイメン Lv2</option><option value="MSB136_3">ガンダム試作3号機ステイメン Lv3</option><option value="MSB136_4">ガンダム試作3号機ステイメン Lv4</option><option value="MSB137_1">ガンダムMk-Ⅲ Lv1</option><option value="MSB137_2">ガンダムMk-Ⅲ Lv2</option><option value="MSB137_3">ガンダムMk-Ⅲ Lv3</option><option value="MSB138_1">ギラ・ズール Lv1</option><option value="MSB138_2">ギラ・ズール Lv2</option><option value="MSB138_3">ギラ・ズール Lv3</option><option value="MSB138_4">ギラ・ズール Lv4</option><option value="MSB139_1">ギラ・ドーガ改 Lv1</option><option value="MSB139_2">ギラ・ドーガ改 Lv2</option><option value="MSB140_1">ザクⅢ Lv1</option><option value="MSB140_2">ザクⅢ Lv2</option><option value="MSB140_3">ザクⅢ Lv3</option><option value="MSB140_4">ザクⅢ Lv4</option><option value="MSB141_1">ザクⅢ［サイコミュ装備型］ Lv1</option><option value="MSB142_1">ジェガン［エコーズ仕様］ Lv1</option><option value="MSB142_2">ジェガン［エコーズ仕様］ Lv2</option><option value="MSB143_1">ジェガン重装型 Lv1</option><option value="MSB143_2">ジェガン重装型 Lv2</option><option value="MSB144_1">ジオング Lv1</option><option value="MSB144_2">ジオング Lv2</option><option value="MSB144_3">ジオング Lv3</option><option value="MSB144_4">ジオング Lv4</option><option value="MSB145_1">スタークジェガン Lv1</option><option value="MSB145_2">スタークジェガン Lv2</option><option value="MSB146_1">ゼク・アイン［第3種兵装］ Lv1</option><option value="MSB146_2">ゼク・アイン［第3種兵装］ Lv2</option><option value="MSB146_3">ゼク・アイン［第3種兵装］ Lv3</option><option value="MSB146_4">ゼク・アイン［第3種兵装］ Lv4</option><option value="MSB147_1">零式 Lv1</option><option value="MSB147_2">零式 Lv2</option><option value="MSB147_3">零式 Lv3</option><option value="MSB147_4">零式 Lv4</option><option value="MSB148_1">ディジェ Lv1</option><option value="MSB148_2">ディジェ Lv2</option><option value="MSB148_3">ディジェ Lv3</option><option value="MSB148_4">ディジェ Lv4</option><option value="MSB149_1">デスパーダ Lv1</option><option value="MSB149_2">デスパーダ Lv2</option><option value="MSB150_1">ドライセン Lv1</option><option value="MSB150_2">ドライセン Lv2</option><option value="MSB150_3">ドライセン Lv3</option><option value="MSB150_4">ドライセン Lv4</option><option value="MSB151_1">パーフェクト・ガンダム【TB】 Lv1</option><option value="MSB151_2">パーフェクト・ガンダム【TB】 Lv2</option><option value="MSB152_1">ブルG【TB】 Lv1</option><option value="MSB152_2">ブルG【TB】 Lv2</option><option value="MSB153_1">ヘイズル・アウスラ Lv1</option><option value="MSB153_2">ヘイズル・アウスラ Lv2</option><option value="MSB154_1">量産型百式改 Lv1</option><option value="MSB154_2">量産型百式改 Lv2</option><option value="MSB155_1">量産型Ζガンダム Lv1</option><option value="MSB156_1">ロズウェル・ジェガン Lv1</option><option value="MSB156_2">ロズウェル・ジェガン Lv2</option><option value="MSB157_1">EWACジェガン Lv1</option><option value="MSB157_2">EWACジェガン Lv2</option><option value="MSB158_1">FAガンダムMk-Ⅱ Lv1</option><option value="MSB158_2">FAガンダムMk-Ⅱ Lv2</option><option value="MSB158_3">FAガンダムMk-Ⅱ Lv3</option><option value="MSB159_1">Ζガンダム［ザク頭］ Lv1</option><option value="MSB159_2">Ζガンダム［ザク頭］ Lv2</option><option value="MSB160_1">アトラスガンダム【TB】 Lv1</option><option value="MSB160_2">アトラスガンダム【TB】 Lv2</option><option value="MSB160_3">アトラスガンダム【TB】 Lv3</option><option value="MSB161_1">アンクシャ Lv1</option><option value="MSB161_2">アンクシャ Lv2</option><option value="MSB162_1">エンゲージゼロ・ヨンファヴィン Lv1</option><option value="MSB163_1">オーヴェロン Lv1</option><option value="MSB163_2">オーヴェロン Lv2</option><option value="MSB164_1">ガブスレイ Lv1</option><option value="MSB164_2">ガブスレイ Lv2</option><option value="MSB164_3">ガブスレイ Lv3</option><option value="MSB165_1">ガンダムMk-Ⅳ Lv1</option><option value="MSB165_2">ガンダムMk-Ⅳ Lv2</option><option value="MSB166_1">ゲルググ・V・キュアノス Lv1</option><option value="MSB166_2">ゲルググ・V・キュアノス Lv2</option><option value="MSB167_1">ジェスタ Lv1</option><option value="MSB167_2">ジェスタ Lv2</option><option value="MSB167_3">ジェスタ Lv3</option><option value="MSB213_1">シルヴァ・バレト［F試験型］ Lv1</option><option value="MSB168_1">ディジェSE-R Lv1</option><option value="MSB168_2">ディジェSE-R Lv2</option><option value="MSB168_3">ディジェSE-R Lv3</option><option value="MSB169_1">トリスタン Lv1</option><option value="MSB169_2">トリスタン Lv2</option><option value="MSB169_3">トリスタン Lv3</option><option value="MSB170_1">ドーベン・ウルフ Lv1</option><option value="MSB170_2">ドーベン・ウルフ Lv2</option><option value="MSB170_3">ドーベン・ウルフ Lv3</option><option value="MSB171_1">バイアラン・イゾルデ Lv1</option><option value="MSB171_2">バイアラン・イゾルデ Lv2</option><option value="MSB172_1">ハイゼンスレイ Lv1</option><option value="MSB172_2">ハイゼンスレイ Lv2</option><option value="MSB174_1">百式改 Lv1</option><option value="MSB174_2">百式改 Lv2</option><option value="MSB174_3">百式改 Lv3</option><option value="MSB173_1">メッサーラ Lv1</option><option value="MSB173_2">メッサーラ Lv2</option><option value="MSB175_1">リ・ガズィ・カスタム Lv1</option><option value="MSB175_2">リ・ガズィ・カスタム Lv2</option><option value="MSB175_3">リ・ガズィ・カスタム Lv3</option><option value="MSB176_1">リゼル Lv1</option><option value="MSB176_2">リゼル Lv2</option><option value="MSB177_1">量産型νガンダム Lv1</option><option value="MSB177_2">量産型νガンダム Lv2</option><option value="MSB178_1">量産型ΖΖガンダム Lv1</option><option value="MSB178_2">量産型ΖΖガンダム Lv2</option><option value="MSB179_1">Ζガンダム Lv1</option><option value="MSB179_2">Ζガンダム Lv2</option><option value="MSB179_3">Ζガンダム Lv3</option><option value="MSB180_1">ΖプラスA2型 Lv1</option><option value="MSB181_1">ΖⅡ Lv1</option><option value="MSB181_2">ΖⅡ Lv2</option><option value="MSB181_3">ΖⅡ Lv3</option><option value="MSB182_1">ガンダムデルタカイ Lv1</option><option value="MSB182_2">ガンダムデルタカイ Lv2</option><option value="MSB183_1">ガンダムGファースト Lv1</option><option value="MSB184_1">ガンダムMk-Ⅴ［MP装備］ Lv1</option><option value="MSB185_1">キュベレイ Lv1</option><option value="MSB185_2">キュベレイ Lv2</option><option value="MSB186_1">グスタフ・カール Lv1</option><option value="MSB186_2">グスタフ・カール Lv2</option><option value="MSB187_1">サイコ・ドーガ Lv1</option><option value="MSB187_2">サイコ・ドーガ Lv2</option><option value="MSB188_1">サイコバウ Lv1</option><option value="MSB188_2">サイコバウ Lv2</option><option value="MSB189_1">シルヴァ・バレト Lv1</option><option value="MSB189_2">シルヴァ・バレト Lv2</option><option value="MSB190_1">ジ・O Lv1</option><option value="MSB190_2">ジ・O Lv2</option><option value="MSB191_1">ゼク・ツヴァイ Lv1</option><option value="MSB191_2">ゼク・ツヴァイ Lv2</option><option value="MSB192_1">ディジェ・トラバーシア Lv1</option><option value="MSB192_2">ディジェ・トラバーシア Lv2</option><option value="MSB193_1">トーリス・リッター Lv1</option><option value="MSB193_2">トーリス・リッター Lv2</option><option value="MSB194_1">ナラティブガンダム［B装備］ Lv1</option><option value="MSB194_2">ナラティブガンダム［B装備］ Lv2</option><option value="MSB195_1">ファーヴニル Lv1</option><option value="MSB196_1">フライルー・ラーⅡ Lv1</option><option value="MSB197_1">メッサーF01型 Lv1</option><option value="MSB197_2">メッサーF01型 Lv2</option><option value="MSB198_1">リバウ Lv1</option><option value="MSB198_2">リバウ Lv2</option><option value="MSB199_1">Ex-Sガンダム Lv1</option><option value="MSB199_2">Ex-Sガンダム Lv2</option><option value="MSB200_1">Ζガンダム3号機A型 Lv1</option><option value="MSB200_2">Ζガンダム3号機A型 Lv2</option><option value="MSB201_1">ΖΖガンダム Lv1</option><option value="MSB201_2">ΖΖガンダム Lv2</option><option value="MSB202_1">サザビー Lv1</option><option value="MSB203_1">シナンジュ Lv1</option><option value="MSB204_1">バンシィ・ノルン Lv1</option><option value="MSB205_1">フェネクス【NT】 Lv1</option><option value="MSB207_1">ムーンガンダム Lv1</option><option value="MSB208_1">ユニコーンガンダム Lv1</option><option value="MSB209_1">FA・ユニコーンガンダム Lv1</option><option value="MSB210_1">Hi-νガンダム Lv1</option><option value="MSB211_1">νガンダム Lv1</option><option value="MSB212_1">Ξガンダム Lv1</option></select></div></td></tr></tbody></table></section><div style="display: flex; justify-content: center;"><figure><img alt="unit image" width="500" height="500" decoding="async" data-nimg="1" srcset="/_next/image?url=%2Funit_image%2FMSB00101.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Funit_image%2FMSB00101.png&amp;w=1080&amp;q=75 2x" src="./GBO2 Custom Parts Simulator_files/MSB00101.png" style="color: transparent;"></figure></div><div class="unit-params-table-container"><div class="unit-params-table-header"><h1>ザクⅡ</h1><span class="level">LV1</span></div><table><tbody><tr><th><div class="color" style="background-color: rgb(30, 112, 134);"></div>COST</th><td class="col2">100</td><td class="col3"></td><td class="col4"></td></tr><tr><th><div class="color" style="background-color: rgb(30, 112, 134);"></div>機体HP</th><td>9500</td><td>[+1000]</td><td class="col4"><div class="status-bar status-bar-hp"><div class="status-fill_basic" style="grid-column: 1 / 9501;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 144, 58);"></div>耐実弾補正</th><td>2</td><td>[+20]</td><td class="col4"><div class="status-bar status-bar-def"><div class="status-fill_basic" style="grid-column: 1 / 3;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 144, 58);"></div>耐ビーム補正</th><td>2</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-def"><div class="status-fill_basic" style="grid-column: 1 / 3;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 144, 58);"></div>耐格闘補正</th><td>2</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-def"><div class="status-fill_basic" style="grid-column: 1 / 3;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(88, 92, 36);"></div>射撃補正</th><td>5</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-atk"><div class="status-fill_basic" style="grid-column: 1 / 6;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(88, 92, 36);"></div>格闘補正</th><td>5</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-atk"><div class="status-fill_basic" style="grid-column: 1 / 6;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 64, 33);"></div>スピード</th><td>110</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-spd"><div class="status-fill_basic" style="grid-column: 1 / 111;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 64, 33);"></div>高速移動</th><td>155</td><td>[+0]</td><td><div class="progress-container"><div class="progress-bar"><div class="progress-fill" style="width: calc(56.25%);"></div></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 64, 33);"></div>スラスター</th><td>50</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-booster"><div class="status-fill_basic" style="grid-column: 1 / 51;"></div></div></td></tr><tr><th><div class="color" style="background-color: rgb(100, 64, 33);"></div>旋回</th><td>45</td><td>[+0]</td><td class="col4"><div class="status-bar status-bar-turn"><div class="status-fill_basic" style="grid-column: 1 / 46;"></div></div></td></tr></tbody></table><div class="parts-slot"><h3>PARTS SLOT</h3><div class="slot"><span>近距離: 0/2</span><div class="slot-bar"><div class="slot-fill_limit" style="grid-column: 1 / 3;"></div></div></div><div class="slot"><span>中距離: 0/3</span><div class="slot-bar"><div class="slot-fill_limit" style="grid-column: 1 / 4;"></div></div></div><div class="slot"><span>遠距離: 0/2</span><div class="slot-bar"><div class="slot-fill_limit" style="grid-column: 1 / 3;"></div></div></div></div></div><section><table><tbody><tr><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td></tr><tr><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td><td><div class="user-params-dropdown"><select><option value="">なし </option><option value="P0101">格闘強化プログラム Lv1</option><option value="P0102">格闘強化プログラム Lv2</option><option value="P0103">格闘強化プログラム Lv3</option><option value="P0104">格闘強化プログラム Lv4</option><option value="P0105">格闘強化プログラム Lv5</option><option value="P0201">射撃強化プログラム Lv1</option><option value="P0202">射撃強化プログラム Lv2</option><option value="P0203">射撃強化プログラム Lv3</option><option value="P0204">射撃強化プログラム Lv4</option><option value="P0205">射撃強化プログラム Lv5</option><option value="P0301">オーバーチューン［格闘］ Lv1</option><option value="P0401">オーバーチューン［射撃］ Lv1</option><option value="P0501">格闘特化プログラム Lv1</option><option value="P0601">イレギュラーDBL Lv1</option><option value="P0701">特殊燃焼剤 Lv1</option><option value="P0801">火器管制最適化システム Lv1</option><option value="P0901">強化フレーム Lv1</option><option value="P0902">強化フレーム Lv2</option><option value="P0903">強化フレーム Lv3</option><option value="P0904">強化フレーム Lv4</option><option value="P0905">強化フレーム Lv5</option><option value="P1001">新型フレーム Lv1</option><option value="P1002">新型フレーム Lv2</option><option value="P1003">新型フレーム Lv3</option><option value="P1004">新型フレーム Lv4</option><option value="P1101">シールド補強材 Lv1</option><option value="P1102">シールド補強材 Lv2</option><option value="P1103">シールド補強材 Lv3</option><option value="P1104">シールド補強材 Lv4</option><option value="P1105">シールド補強材 Lv5</option><option value="P1201">耐実弾装甲 Lv1</option><option value="P1202">耐実弾装甲 Lv2</option><option value="P1203">耐実弾装甲 Lv3</option><option value="P1204">耐実弾装甲 Lv4</option><option value="P1205">耐実弾装甲 Lv5</option><option value="P1301">耐ビーム装甲 Lv1</option><option value="P1302">耐ビーム装甲 Lv2</option><option value="P1303">耐ビーム装甲 Lv3</option><option value="P1304">耐ビーム装甲 Lv4</option><option value="P1305">耐ビーム装甲 Lv5</option><option value="P1401">耐格闘装甲 Lv1</option><option value="P1402">耐格闘装甲 Lv2</option><option value="P1403">耐格闘装甲 Lv3</option><option value="P1404">耐格闘装甲 Lv4</option><option value="P1405">耐格闘装甲 Lv5</option><option value="P1501">新型耐実弾装甲 Lv1</option><option value="P1601">新型耐ビーム装甲 Lv1</option><option value="P1701">新型耐格闘装甲 Lv1</option><option value="P1801">オーバーチューン［フレーム］ Lv1</option><option value="P1901">オーバーチューン［実弾装甲］ Lv1</option><option value="P2001">オーバーチューン［ビーム装甲］ Lv1</option><option value="P2101">オーバーチューン［格闘装甲］ Lv1</option><option value="P2201">ヘビーアーマー Lv1</option><option value="P2301">複合装甲材［Type-A］ Lv1</option><option value="P2401">複合装甲材［Type-B］ Lv1</option><option value="P2501">複合装甲材［Type-C］ Lv1</option><option value="P2601">サイコ・パッケージ Lv1</option><option value="P2701">新型緩衝材 Lv1</option><option value="P2801">特殊強化フレーム［Type-A］ Lv1</option><option value="P2901">特殊強化フレーム［Type-B］ Lv1</option><option value="P3001">高性能走行制御機構 Lv1</option><option value="P3101">噴射制御装置 Lv1</option><option value="P3102">噴射制御装置 Lv2</option><option value="P3103">噴射制御装置 Lv3</option><option value="P3104">噴射制御装置 Lv4</option><option value="P3105">噴射制御装置 Lv5</option><option value="P3201">大出力追加ブースター Lv1</option><option value="P3301">オーバーチューン［機動］ Lv1</option><option value="P3401">オーバーチューン［スラスター］ Lv1</option><option value="P3501">運動性能強化機構 Lv1</option><option value="P3601">燃焼効率補助装置 Lv1</option><option value="P3701">コンポジットモーター Lv1</option><option value="P3801">冷却システム Lv1</option><option value="P3802">冷却システム Lv2</option><option value="P3803">冷却システム Lv3</option><option value="P3804">冷却システム Lv4</option><option value="P3805">冷却システム Lv5</option><option value="P3901">強制冷却システム Lv1</option><option value="P3902">強制冷却システム Lv2</option><option value="P3903">強制冷却システム Lv3</option><option value="P3904">強制冷却システム Lv4</option><option value="P3905">強制冷却システム Lv5</option><option value="P4001">クイックローダー Lv1</option><option value="P4002">クイックローダー Lv2</option><option value="P4003">クイックローダー Lv3</option><option value="P4004">クイックローダー Lv4</option><option value="P4101">補助ジェネレーター Lv1</option><option value="P4102">補助ジェネレーター Lv2</option><option value="P4103">補助ジェネレーター Lv3</option><option value="P4104">補助ジェネレーター Lv4</option><option value="P4105">補助ジェネレーター Lv5</option><option value="P4201">高精度集束リング Lv1</option><option value="P4202">高精度集束リング Lv2</option><option value="P4203">高精度集束リング Lv3</option><option value="P4301">AD-DCS Lv1</option><option value="P4302">AD-DCS Lv2</option><option value="P4401">フィールドモーター Lv1</option><option value="P4402">フィールドモーター Lv2</option><option value="P4403">フィールドモーター Lv3</option><option value="P4501">AD-ASL Lv1</option><option value="P4502">AD-ASL Lv2</option><option value="P4601">電子防護システム Lv1</option><option value="P4701">大容量補給パック Lv1</option><option value="P4801">脚部特殊装甲 Lv1</option><option value="P4802">脚部特殊装甲 Lv2</option><option value="P4803">脚部特殊装甲 Lv3</option><option value="P4804">脚部特殊装甲 Lv4</option><option value="P4901">頭部特殊装甲 Lv1</option><option value="P4902">頭部特殊装甲 Lv2</option><option value="P4903">頭部特殊装甲 Lv3</option><option value="P5001">背部特殊装甲 Lv1</option><option value="P5002">背部特殊装甲 Lv2</option><option value="P5003">背部特殊装甲 Lv3</option><option value="P5101">データベースリンク Lv1</option><option value="P5102">データベースリンク Lv2</option><option value="P5201">スペースドフレーム Lv1</option><option value="P5202">スペースドフレーム Lv2</option><option value="P5203">スペースドフレーム Lv3</option><option value="P5204">スペースドフレーム Lv4</option><option value="P5301">スペースドアーマー Lv1</option><option value="P5401">サイコフレーム Lv1</option><option value="P5501">教育型コンピューター Lv1</option><option value="P5601">複合フレーム［Type-A］ Lv1</option><option value="P5701">複合フレーム［Type-B］ Lv1</option><option value="P5801">水中戦適正化装置 Lv1</option><option value="P5901">射撃攻防プログラム Lv1</option></select></div></td></tr></tbody></table></section><footer>© 2024 by FFFF</footer></div><script src="./GBO2 Custom Parts Simulator_files/webpack.js.download" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"3:\"$Sreact.fragment\"\n5:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\n6:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\nb:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"ClientPageRoot\"]\nc:I[\"(app-pages-browser)/./src/app/page.tsx\",[\"app/page\",\"static/chunks/app/page.js\"],\"default\"]\nd:I[\"(app-pages-browser)/./node_modules/next/dist/lib/metadata/metadata-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"OutletBoundary\"]\n11:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\n12:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/client-segment.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"ClientSegmentRoot\"]\n13:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"HTTPAccessFallbackBoundary\"]\n14:I[\"(app-pages-browser)/./node_modules/next/dist/lib/metadata/metadata-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"MetadataBoundary\"]\n15:I[\"(app-pages-browser)/./node_modules/next/dist/lib/metadata/metadata-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"ViewportBoundary\"]\n:HL[\"/_next/static/media/569ce4b8f30dc480-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/93f479601ee12b01-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/app/layout.css?v=1734107715846\",\"style\"]\n2:{\"name\":\"Preloads\",\"env\":\"Server\",\"key\":null,\"owner\":null,\"props\":{\"preloadCallbacks\":[\"$E(()=\u003e{ctx.componentMod.preloadFont(href,type,ctx.render"])</script><script>self.__next_f.push([1,"Opts.crossOrigin,ctx.nonce)})\",\"$E(()=\u003e{ctx.componentMod.preloadFont(href,type,ctx.renderOpts.crossOrigin,ctx.nonce)})\",\"$E(()=\u003e{ctx.componentMod.preloadStyle(fullHref,ctx.renderOpts.crossOrigin,ctx.nonce)})\"]}}\n1:D\"$2\"\n1:null\n7:{\"name\":\"RootLayout\",\"env\":\"Server\",\"key\":null,\"owner\":null,\"props\":{\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$3\",null,{\"children\":[\"$\",\"$L6\",null,{},null]},null],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"$3\",null,{\"children\":\"$Y\"},null],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"},null],\"params\":\"$Y\"}}\n4:D\"$7\"\n9:{\"name\":\"NotFound\",\"env\":\"Server\",\"key\":null,\"owner\":null,\"props\":{}}\n8:D\"$9\"\na:{\"name\":\"HTTPAccessErrorFallback\",\"env\":\"Server\",\"key\":null,\"owner\":\"$9\",\"props\":{\"status\":404,\"message\":\"This page could not be found.\"}}\n8:D\"$a\"\n8:[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"},\"$a\"],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}},\"$a\"],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404},\"$a\"],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"},\"$a\"]},\""])</script><script>self.__next_f.push([1,"$a\"]]},\"$a\"]},\"$a\"]]\n4:[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_4d318d __variable_ea5f4b antialiased\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{},null],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[],\"$8\"],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"},null]},\"$7\"]},\"$7\"]\nf:{\"name\":\"__next_outlet_boundary__\",\"env\":\"Server\",\"key\":null,\"owner\":null,\"props\":{\"ready\":\"$E(async function getMetadataAndViewportReady() {\\n        await viewport();\\n        await metadata();\\n        return undefined;\\n    })\"}}\ne:D\"$f\"\n"])</script><script>self.__next_f.push([1,"16:{\"name\":\"NonIndex\",\"env\":\"Server\",\"key\":null,\"owner\":null,\"props\":{\"ctx\":{\"componentMod\":{\"GlobalError\":\"$11\",\"__next_app__\":{\"require\":\"$E(function __webpack_require__(moduleId) {\\n/******/ \\t\\t// Check if module is in cache\\n/******/ \\t\\tvar cachedModule = __webpack_module_cache__[moduleId];\\n/******/ \\t\\tif (cachedModule !== undefined) {\\n/******/ \\t\\t\\treturn cachedModule.exports;\\n/******/ \\t\\t}\\n/******/ \\t\\t// Create a new module (and put it into the cache)\\n/******/ \\t\\tvar module = __webpack_module_cache__[moduleId] = {\\n/******/ \\t\\t\\tid: moduleId,\\n/******/ \\t\\t\\tloaded: false,\\n/******/ \\t\\t\\texports: {}\\n/******/ \\t\\t};\\n/******/ \\t\\n/******/ \\t\\t// Execute the module function\\n/******/ \\t\\tvar threw = true;\\n/******/ \\t\\ttry {\\n/******/ \\t\\t\\t__webpack_modules__[moduleId](module, module.exports, __webpack_require__);\\n/******/ \\t\\t\\tthrew = false;\\n/******/ \\t\\t} finally {\\n/******/ \\t\\t\\tif(threw) delete __webpack_module_cache__[moduleId];\\n/******/ \\t\\t}\\n/******/ \\t\\n/******/ \\t\\t// Flag the module as loaded\\n/******/ \\t\\tmodule.loaded = true;\\n/******/ \\t\\n/******/ \\t\\t// Return the exports of the module\\n/******/ \\t\\treturn module.exports;\\n/******/ \\t})\",\"loadChunk\":\"$E(() =\u003e Promise.resolve())\"},\"pages\":[\"/home/ubuntu/gb02cps/GBO2CPS/src/app/page.tsx\"],\"routeModule\":{\"userland\":{\"loaderTree\":[\"\",{\"children\":\"$Y\"},\"$Y\"]},\"definition\":\"$Y\"},\"tree\":\"$Y\",\"ClientPageRoot\":\"$b\",\"ClientSegmentRoot\":\"$12\",\"HTTPAccessFallbackBoundary\":\"$13\",\"LayoutRouter\":\"$5\",\"MetadataBoundary\":\"$14\",\"OutletBoundary\":\"$d\",\"Postpone\":\"$E(function Postpone({ reason, route }) {\\n    const prerenderStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    const dynamicTracking = prerenderStore \u0026\u0026 prerenderStore.type === 'prerender-ppr' ? prerenderStore.dynamicTracking : null;\\n    postponeWithTracking(route, reason, dynamicTracking);\\n})\",\"RenderFromTemplateContext\":\"$6\",\"ViewportBoundary\":\"$15\",\"actionAsyncStorage\":\"$Y\",\"collectSegmentData\":\"$E(async function collectSegmentData(fullPageDataBuffer, staleTime, clientModules, serverConsumerManifest) {\\n    // Traverse the router tree and generate a prefetch response for each segment.\\n    // A mutable map to collect the results as we traverse the route tree.\\n    const resultMap = new Map();\\n    // Before we start, warm up the module cache by decoding the page data once.\\n    // Then we can assume that any remaining async tasks that occur the next time\\n    // are due to hanging promises caused by dynamic data access. Note we only\\n    // have to do this once per page, not per individual segment.\\n    //\\n    try {\\n        await (0, _clientedge.createFromReadableStream)((0, _nodewebstreamshelper.streamFromBuffer)(fullPageDataBuffer), {\\n            serverConsumerManifest\\n        });\\n        await (0, _scheduler.waitAtLeastOneReactRenderTask)();\\n    } catch  {}\\n    // Create an abort controller that we'll use to stop the stream.\\n    const abortController = new AbortController();\\n    const onCompletedProcessingRouteTree = async ()=\u003e{\\n        // Since all we're doing is decoding and re-encoding a cached prerender, if\\n        // serializing the stream takes longer than a microtask, it must because of\\n        // hanging promises caused by dynamic data.\\n        await (0, _scheduler.waitAtLeastOneReactRenderTask)();\\n        abortController.abort();\\n    };\\n    // Generate a stream for the route tree prefetch. While we're walking the\\n    // tree, we'll also spawn additional tasks to generate the segment prefetches.\\n    // The promises for these tasks are pushed to a mutable array that we will\\n    // await once the route tree is fully rendered.\\n    const segmentTasks = [];\\n    const { prelude: treeStream } = await (0, _staticedge.prerender)(// RootTreePrefetch is not a valid return type for a React component, but\\n    // we need to use a component so that when we decode the original stream\\n    // inside of it, the side effects are transferred to the new stream.\\n    // @ts-expect-error\\n    /*#__PURE__*/ (0, _jsxruntime.jsx)(PrefetchTreeData, {\\n        fullPageDataBuffer: fullPageDataBuffer,\\n        serverConsumerManifest: serverConsumerManifest,\\n        clientModules: clientModules,\\n        staleTime: staleTime,\\n        segmentTasks: segmentTasks,\\n        onCompletedProcessingRouteTree: onCompletedProcessingRouteTree\\n    }), clientModules, {\\n        signal: abortController.signal,\\n        onError () {\\n        // Ignore any errors. These would have already been reported when\\n        // we created the full page data.\\n        }\\n    });\\n    // Write the route tree to a special `/_tree` segment.\\n    const treeBuffer = await (0, _nodewebstreamshelper.streamToBuffer)(treeStream);\\n    resultMap.set('/_tree', treeBuffer);\\n    // Now that we've finished rendering the route tree, all the segment tasks\\n    // should have been spawned. Await them in parallel and write the segment\\n    // prefetches to the result map.\\n    for (const [segmentPath, buffer] of (await Promise.all(segmentTasks))){\\n        resultMap.set(segmentPath, buffer);\\n    }\\n    return resultMap;\\n})\",\"createMetadataComponents\":\"$E(function createMetadataComponents({ tree, searchParams, metadataContext, getDynamicParamFromSegment, appUsingSizeAdjustment, errorType, createServerParamsForMetadata, workStore, MetadataBoundary, ViewportBoundary }) {\\n    function MetadataRoot() {\\n        return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {\\n            children: [\\n                /*#__PURE__*/ (0, _jsxruntime.jsx)(MetadataBoundary, {\\n                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Metadata, {})\\n                }),\\n                /*#__PURE__*/ (0, _jsxruntime.jsx)(ViewportBoundary, {\\n                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Viewport, {})\\n                }),\\n                appUsingSizeAdjustment ? /*#__PURE__*/ (0, _jsxruntime.jsx)(\\\"meta\\\", {\\n                    name: \\\"next-size-adjust\\\",\\n                    content: \\\"\\\"\\n                }) : null\\n            ]\\n        });\\n    }\\n    async function viewport() {\\n        return getResolvedViewport(tree, searchParams, getDynamicParamFromSegment, createServerParamsForMetadata, workStore, errorType);\\n    }\\n    async function Viewport() {\\n        try {\\n            return await viewport();\\n        } catch (error) {\\n            if (!errorType \u0026\u0026 (0, _httpaccessfallback.isHTTPAccessFallbackError)(error)) {\\n                try {\\n                    return await getNotFoundViewport(tree, searchParams, getDynamicParamFromSegment, createServerParamsForMetadata, workStore);\\n                } catch  {}\\n            }\\n            // We don't actually want to error in this component. We will\\n            // also error in the MetadataOutlet which causes the error to\\n            // bubble from the right position in the page to be caught by the\\n            // appropriate boundaries\\n            return null;\\n        }\\n    }\\n    Viewport.displayName = _metadataconstants.VIEWPORT_BOUNDARY_NAME;\\n    async function metadata() {\\n        return getResolvedMetadata(tree, searchParams, getDynamicParamFromSegment, metadataContext, createServerParamsForMetadata, workStore, errorType);\\n    }\\n    async function Metadata() {\\n        try {\\n            return await metadata();\\n        } catch (error) {\\n            if (!errorType \u0026\u0026 (0, _httpaccessfallback.isHTTPAccessFallbackError)(error)) {\\n                try {\\n                    return await getNotFoundMetadata(tree, searchParams, getDynamicParamFromSegment, metadataContext, createServerParamsForMetadata, workStore);\\n                } catch  {}\\n            }\\n            // We don't actually want to error in this component. We will\\n            // also error in the MetadataOutlet which causes the error to\\n            // bubble from the right position in the page to be caught by the\\n            // appropriate boundaries\\n            return null;\\n        }\\n    }\\n    Metadata.displayName = _metadataconstants.METADATA_BOUNDARY_NAME;\\n    async function getMetadataAndViewportReady() {\\n        await viewport();\\n        await metadata();\\n        return undefined;\\n    }\\n    return [\\n        MetadataRoot,\\n        getMetadataAndViewportReady\\n    ];\\n})\",\"createPrerenderParamsForClientSegment\":\"$E(function createPrerenderParamsForClientSegment(underlyingParams, workStore) {\\n    const prerenderStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (prerenderStore \u0026\u0026 prerenderStore.type === 'prerender') {\\n        const fallbackParams = workStore.fallbackRouteParams;\\n        if (fallbackParams) {\\n            for(let key in underlyingParams){\\n                if (fallbackParams.has(key)) {\\n                    // This params object has one of more fallback params so we need to consider\\n                    // the awaiting of this params object \\\"dynamic\\\". Since we are in dynamicIO mode\\n                    // we encode this as a promise that never resolves\\n                    return (0, _dynamicrenderingutils.makeHangingPromise)(prerenderStore.renderSignal, '`params`');\\n                }\\n            }\\n        }\\n    }\\n    // We're prerendering in a mode that does not abort. We resolve the promise without\\n    // any tracking because we're just transporting a value from server to client where the tracking\\n    // will be applied.\\n    return Promise.resolve(underlyingParams);\\n})\",\"createPrerenderSearchParamsForClientPage\":\"$E(function createPrerenderSearchParamsForClientPage(workStore) {\\n    if (workStore.forceStatic) {\\n        // When using forceStatic we override all other logic and always just return an empty\\n        // dictionary object.\\n        return Promise.resolve({});\\n    }\\n    const prerenderStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (prerenderStore \u0026\u0026 prerenderStore.type === 'prerender') {\\n        // dynamicIO Prerender\\n        // We're prerendering in a mode that aborts (dynamicIO) and should stall\\n        // the promise to ensure the RSC side is considered dynamic\\n        return (0, _dynamicrenderingutils.makeHangingPromise)(prerenderStore.renderSignal, '`searchParams`');\\n    }\\n    // We're prerendering in a mode that does not aborts. We resolve the promise without\\n    // any tracking because we're just transporting a value from server to client where the tracking\\n    // will be applied.\\n    return Promise.resolve({});\\n})\",\"createServerParamsForMetadata\":\"$E(function createServerParamsForServerSegment(underlyingParams, workStore) {\\n    const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (workUnitStore) {\\n        switch(workUnitStore.type){\\n            case 'prerender':\\n            case 'prerender-ppr':\\n            case 'prerender-legacy':\\n                return createPrerenderParams(underlyingParams, workStore, workUnitStore);\\n            default:\\n        }\\n    }\\n    return createRenderParams(underlyingParams, workStore);\\n})\",\"createServerParamsForServerSegment\":\"$E(function createServerParamsForServerSegment(underlyingParams, workStore) {\\n    const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (workUnitStore) {\\n        switch(workUnitStore.type){\\n            case 'prerender':\\n            case 'prerender-ppr':\\n            case 'prerender-legacy':\\n                return createPrerenderParams(underlyingParams, workStore, workUnitStore);\\n            default:\\n        }\\n    }\\n    return createRenderParams(underlyingParams, workStore);\\n})\",\"createServerSearchParamsForMetadata\":\"$E(function createServerSearchParamsForServerPage(underlyingSearchParams, workStore) {\\n    const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (workUnitStore) {\\n        switch(workUnitStore.type){\\n            case 'prerender':\\n            case 'prerender-ppr':\\n            case 'prerender-legacy':\\n                return createPrerenderSearchParams(workStore, workUnitStore);\\n            default:\\n        }\\n    }\\n    return createRenderSearchParams(underlyingSearchParams, workStore);\\n})\",\"createServerSearchParamsForServerPage\":\"$E(function createServerSearchParamsForServerPage(underlyingSearchParams, workStore) {\\n    const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();\\n    if (workUnitStore) {\\n        switch(workUnitStore.type){\\n            case 'prerender':\\n            case 'prerender-ppr':\\n            case 'prerender-legacy':\\n                return createPrerenderSearchParams(workStore, workUnitStore);\\n            default:\\n        }\\n    }\\n    return createRenderSearchParams(underlyingSearchParams, workStore);\\n})\",\"createTemporaryReferenceSet\":\"$E(function(){return new WeakMap})\",\"decodeAction\":\"$E(function(body,serverManifest){var formData=new FormData,action=null;return body.forEach(function(value1,key){key.startsWith(\\\"$ACTION_\\\")?key.startsWith(\\\"$ACTION_REF_\\\")?(value1=decodeBoundActionMetaData(body,serverManifest,value1=\\\"$ACTION_\\\"+key.slice(12)+\\\":\\\"),action=loadServerReference(serverManifest,value1.id,value1.bound)):key.startsWith(\\\"$ACTION_ID_\\\")\u0026\u0026(action=loadServerReference(serverManifest,value1=key.slice(11),null)):formData.append(key,value1)}),null===action?null:action.then(function(fn){return fn.bind(null,formData)})})\",\"decodeFormState\":\"$E(function(actionResult,body,serverManifest){var keyPath=body.get(\\\"$ACTION_KEY\\\");if(\\\"string\\\"!=typeof keyPath)return Promise.resolve(null);var metaData=null;if(body.forEach(function(value1,key){key.startsWith(\\\"$ACTION_REF_\\\")\u0026\u0026(metaData=decodeBoundActionMetaData(body,serverManifest,\\\"$ACTION_\\\"+key.slice(12)+\\\":\\\"))}),null===metaData)return Promise.resolve(null);var referenceId=metaData.id;return Promise.resolve(metaData.bound).then(function(bound){return null===bound?null:[actionResult,keyPath,referenceId,bound.length-1]})})\",\"decodeReply\":\"$E(function(body,webpackMap,options){if(\\\"string\\\"==typeof body){var form=new FormData;form.append(\\\"0\\\",body),body=form}return webpackMap=getChunk(body=createResponse(webpackMap,\\\"\\\",options?options.temporaryReferences:void 0,body),0),close(body),webpackMap})\",\"patchFetch\":\"$E(function patchFetch() {\\n    return (0, _patchfetch.patchFetch)({\\n        workAsyncStorage: _workasyncstorageexternal.workAsyncStorage,\\n        workUnitAsyncStorage: _workunitasyncstorageexternal.workUnitAsyncStorage\\n    });\\n})\",\"preconnect\":\"$E(function preconnect(href, crossOrigin, nonce) {\\n    const opts = {};\\n    if (typeof crossOrigin === 'string') {\\n        opts.crossOrigin = crossOrigin;\\n    }\\n    if (typeof nonce === 'string') {\\n        opts.nonce = nonce;\\n    }\\n    ;\\n    _reactdom.default.preconnect(href, opts);\\n})\",\"preloadFont\":\"$E(function preloadFont(href, type, crossOrigin, nonce) {\\n    const opts = {\\n        as: 'font',\\n        type\\n    };\\n    if (typeof crossOrigin === 'string') {\\n        opts.crossOrigin = crossOrigin;\\n    }\\n    if (typeof nonce === 'string') {\\n        opts.nonce = nonce;\\n    }\\n    _reactdom.default.preload(href, opts);\\n})\",\"preloadStyle\":\"$E(function preloadStyle(href, crossOrigin, nonce) {\\n    const opts = {\\n        as: 'style'\\n    };\\n    if (typeof crossOrigin === 'string') {\\n        opts.crossOrigin = crossOrigin;\\n    }\\n    if (typeof nonce === 'string') {\\n        opts.nonce = nonce;\\n    }\\n    _reactdom.default.preload(href, opts);\\n})\",\"prerender\":\"$undefined\",\"renderToReadableStream\":\"$E(function(model,webpackMap,options){var request=new RequestInstance(20,model,webpackMap,options?options.onError:void 0,options?options.identifierPrefix:void 0,options?options.onPostpone:void 0,options?options.temporaryReferences:void 0,options?options.environmentName:void 0,options?options.filterStackFrame:void 0,noop,noop);if(options\u0026\u0026options.signal){var signal=options.signal;if(signal.aborted)abort(request,signal.reason);else{var listener=function(){abort(request,signal.reason),signal.removeEventListener(\\\"abort\\\",listener)};signal.addEventListener(\\\"abort\\\",listener)}}return new ReadableStream({type:\\\"bytes\\\",start:function(){request.flushScheduled=null!==request.destination,supportsRequestStorage?scheduleMicrotask(function(){requestStorage.run(request,performWork,request)}):scheduleMicrotask(function(){return performWork(request)}),setTimeoutOrImmediate(function(){request.status===OPENING\u0026\u0026(request.status=11)},0)},pull:function(controller){if(request.status===CLOSING)request.status=CLOSED,closeWithError(controller,request.fatalError);else if(request.status!==CLOSED\u0026\u0026null===request.destination){request.destination=controller;try{flushCompletedChunks(request,controller)}catch(error){logRecoverableError(request,error,null),fatalError(request,error)}}},cancel:function(reason){request.destination=null,abort(request,reason)}},{highWaterMark:0})})\",\"serverHooks\":\"$Y\",\"taintObjectReference\":\"$E(function notImplemented() {\\n    throw new Error('Taint can only be used with the taint flag.');\\n})\",\"workAsyncStorage\":\"$Y\",\"workUnitAsyncStorage\":\"$Y\"},\"url\":\"$Y\",\"renderOpts\":\"$Y\",\"workStore\":\"$Y\",\"parsedRequestHeaders\":\"$Y\",\"getDynamicParamFromSegment\":\"$E(function(segment){let segmentParam=getSegmentParam(segment);if(!segmentParam)return null;let key=segmentParam.param,value1=params[key];if(fallbackRouteParams\u0026\u0026fallbackRouteParams.has(segmentParam.param)?value1=fallbackRouteParams.get(segmentParam.param):Array.isArray(value1)?value1=value1.map(i=\u003eencodeURIComponent(i)):\\\"string\\\"==typeof value1\u0026\u0026(value1=encodeURIComponent(value1)),!value1){let isCatchall=\\\"catchall\\\"===segmentParam.type,isOptionalCatchall=\\\"optional-catchall\\\"===segmentParam.type;if(isCatchall||isOptionalCatchall){let dynamicParamType=dynamicParamTypes[segmentParam.type];return isOptionalCatchall?{param:key,value:null,type:dynamicParamType,treeSegment:[key,\\\"\\\",dynamicParamType]}:{param:key,value:value1=pagePath.split(\\\"/\\\").slice(1).flatMap(pathSegment=\u003e{let param=function(param){let match=param.match(PARAMETER_PATTERN);return match?parseMatchedParameter(match[1]):parseMatchedParameter(param)}(pathSegment);return params[param.key]??param.key}),type:dynamicParamType,treeSegment:[key,value1.join(\\\"/\\\"),dynamicParamType]}}}let type=function(type){let short=dynamicParamTypes[type];if(!short)throw Error(\\\"Unknown dynamic param type\\\");return short}(segmentParam.type);return{param:key,value:value1,treeSegment:[key,Array.isArray(value1)?value1.join(\\\"/\\\"):value1,type],type:type}})\",\"query\":\"$0:f:0:1:2:children:1:props:children:0:props:searchParams\",\"isPrefetch\":false,\"isAction\":false,\"requestTimestamp\":1734107715846,\"appUsingSizeAdjustment\":true,\"flightRouterState\":\"$undefined\",\"requestId\":\"yxu7OMgPLFrQqkDEX1RRc\",\"pagePath\":\"/\",\"clientReferenceManifest\":\"$Y\",\"assetPrefix\":\"\",\"isNotFoundPath\":false,\"nonce\":\"$undefined\",\"res\":\"$Y\"}}}\n"])</script><script>self.__next_f.push([1,"10:D\"$16\"\n10:null\n18:{\"name\":\"MetadataRoot\",\"env\":\"Server\",\"key\":\"yxu7OMgPLFrQqkDEX1RRc\",\"owner\":null,\"props\":{}}\n17:D\"$18\"\n1a:{\"name\":\"__next_metadata_boundary__\",\"env\":\"Server\",\"key\":null,\"owner\":\"$18\",\"props\":{}}\n19:D\"$1a\"\n1c:{\"name\":\"__next_viewport_boundary__\",\"env\":\"Server\",\"key\":null,\"owner\":\"$18\",\"props\":{}}\n1b:D\"$1c\"\n17:[\"$\",\"$3\",\"yxu7OMgPLFrQqkDEX1RRc\",{\"children\":[[\"$\",\"$L14\",null,{\"children\":\"$L19\"},\"$18\"],[\"$\",\"$L15\",null,{\"children\":\"$L1b\"},\"$18\"],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"},\"$18\"]]},null]\n1d:[]\n0:{\"P\":\"$1\",\"b\":\"development\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$3\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/app/layout.css?v=1734107715846\",\"precedence\":\"next_static/css/app/layout.css\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"},null]],\"$4\"]},null],{\"children\":[\"__PAGE__\",[\"$\",\"$3\",\"c\",{\"children\":[[\"$\",\"$Lb\",null,{\"Component\":\"$c\",\"searchParams\":{},\"params\":{}},null],null,[\"$\",\"$Ld\",null,{\"children\":\"$Le\"},null]]},null],{},null,false]},null,false],[\"$\",\"$3\",\"h\",{\"children\":[\"$10\",\"$17\"]},null],false]],\"m\":\"$W1d\",\"G\":[\"$11\",\"$undefined\"],\"s\":false,\"S\":false}\n"])</script><script>self.__next_f.push([1,"1b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"},\"$f\"]]\n19:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"},\"$1a\"],[\"$\",\"title\",\"1\",{\"children\":\"GBO2 Custom Parts Simulator\"},\"$1a\"],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"GBO2 Custom Parts Simulator\"},\"$1a\"],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"},\"$1a\"]]\ne:null\n"])</script><nextjs-portal><template shadowrootmode="open"><style>
+        :host {
+          all: initial;
+
+          /* the direction property is not reset by 'all' */
+          direction: ltr;
+        }
+
+        /*!
+         * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+         * Copyright 2011-2019 The Bootstrap Authors
+         * Copyright 2011-2019 Twitter, Inc.
+         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+         * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+         */
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
+        :host {
+          font-family: sans-serif;
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        article,
+        aside,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section {
+          display: block;
+        }
+
+        :host {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+            'Noto Color Emoji';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: var(--color-font);
+          text-align: left;
+          background-color: #fff;
+        }
+
+        [tabindex='-1']:focus:not(:focus-visible) {
+          outline: 0 !important;
+        }
+
+        hr {
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-top: 0;
+          margin-bottom: 8px;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        abbr[title],
+        abbr[data-original-title] {
+          text-decoration: underline;
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+          cursor: help;
+          border-bottom: 0;
+          -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+        }
+
+        address {
+          margin-bottom: 16px;
+          font-style: normal;
+          line-height: inherit;
+        }
+
+        ol,
+        ul,
+        dl {
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        ol ol,
+        ul ul,
+        ol ul,
+        ul ol {
+          margin-bottom: 0;
+        }
+
+        dt {
+          font-weight: 700;
+        }
+
+        dd {
+          margin-bottom: 8px;
+          margin-left: 0;
+        }
+
+        blockquote {
+          margin: 0 0 16px;
+        }
+
+        b,
+        strong {
+          font-weight: bolder;
+        }
+
+        small {
+          font-size: 80%;
+        }
+
+        sub,
+        sup {
+          position: relative;
+          font-size: 75%;
+          line-height: 0;
+          vertical-align: baseline;
+        }
+
+        sub {
+          bottom: -0.25em;
+        }
+
+        sup {
+          top: -0.5em;
+        }
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          background-color: transparent;
+        }
+
+        a:hover {
+          color: #0056b3;
+          text-decoration: underline;
+        }
+
+        a:not([href]) {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a:not([href]):hover {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        pre,
+        code,
+        kbd,
+        samp {
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+            'Liberation Mono', 'Courier New', monospace;
+          font-size: 1em;
+        }
+
+        pre {
+          margin-top: 0;
+          margin-bottom: 16px;
+          overflow: auto;
+        }
+
+        figure {
+          margin: 0 0 16px;
+        }
+
+        img {
+          vertical-align: middle;
+          border-style: none;
+        }
+
+        svg {
+          overflow: hidden;
+          vertical-align: middle;
+        }
+
+        table {
+          border-collapse: collapse;
+        }
+
+        caption {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          color: #6c757d;
+          text-align: left;
+          caption-side: bottom;
+        }
+
+        th {
+          text-align: inherit;
+        }
+
+        label {
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+
+        button {
+          border-radius: 0;
+        }
+
+        button:focus {
+          outline: 1px dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+
+        input,
+        button,
+        select,
+        optgroup,
+        textarea {
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        button,
+        input {
+          overflow: visible;
+        }
+
+        button,
+        select {
+          text-transform: none;
+        }
+
+        select {
+          word-wrap: normal;
+        }
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+          -webkit-appearance: button;
+        }
+
+        button:not(:disabled),
+        [type='button']:not(:disabled),
+        [type='reset']:not(:disabled),
+        [type='submit']:not(:disabled) {
+          cursor: pointer;
+        }
+
+        button::-moz-focus-inner,
+        [type='button']::-moz-focus-inner,
+        [type='reset']::-moz-focus-inner,
+        [type='submit']::-moz-focus-inner {
+          padding: 0;
+          border-style: none;
+        }
+
+        input[type='radio'],
+        input[type='checkbox'] {
+          box-sizing: border-box;
+          padding: 0;
+        }
+
+        input[type='date'],
+        input[type='time'],
+        input[type='datetime-local'],
+        input[type='month'] {
+          -webkit-appearance: listbox;
+        }
+
+        textarea {
+          overflow: auto;
+          resize: vertical;
+        }
+
+        fieldset {
+          min-width: 0;
+          padding: 0;
+          margin: 0;
+          border: 0;
+        }
+
+        legend {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+          padding: 0;
+          margin-bottom: 8px;
+          font-size: 24px;
+          line-height: inherit;
+          color: inherit;
+          white-space: normal;
+        }
+
+        progress {
+          vertical-align: baseline;
+        }
+
+        [type='number']::-webkit-inner-spin-button,
+        [type='number']::-webkit-outer-spin-button {
+          height: auto;
+        }
+
+        [type='search'] {
+          outline-offset: -2px;
+          -webkit-appearance: none;
+        }
+
+        [type='search']::-webkit-search-decoration {
+          -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+          font: inherit;
+          -webkit-appearance: button;
+        }
+
+        output {
+          display: inline-block;
+        }
+
+        summary {
+          display: list-item;
+          cursor: pointer;
+        }
+
+        template {
+          display: none;
+        }
+
+        [hidden] {
+          display: none !important;
+        }
+      </style><style>
+        :host {
+          --size-gap-half: 4px;
+          --size-gap: 8px;
+          --size-gap-double: 16px;
+          --size-gap-triple: 24px;
+          --size-gap-quad: 32px;
+
+          --size-font-small: 14px;
+          --size-font: 16px;
+          --size-font-big: 20px;
+          --size-font-bigger: 24px;
+
+          --color-background: white;
+          --color-font: #757575;
+          --color-backdrop: rgba(17, 17, 17, 0.2);
+          --color-border-shadow: rgba(0, 0, 0, 0.145);
+
+          --color-title-color: #1f1f1f;
+          --color-stack-h6: #222;
+          --color-stack-headline: #666;
+          --color-stack-subline: #999;
+          --color-stack-notes: #777;
+
+          --color-accents-1: #808080;
+          --color-accents-2: #222222;
+          --color-accents-3: #404040;
+
+          --color-text-color-red-1: #ff5555;
+          --color-text-background-red-1: #fff9f9;
+
+          --font-stack-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono',
+            Menlo, Courier, monospace;
+          --font-stack-sans: -apple-system, 'Source Sans Pro', sans-serif;
+
+          --color-ansi-selection: rgba(95, 126, 151, 0.48);
+          --color-ansi-bg: #111111;
+          --color-ansi-fg: #cccccc;
+
+          --color-ansi-white: #777777;
+          --color-ansi-black: #141414;
+          --color-ansi-blue: #00aaff;
+          --color-ansi-cyan: #88ddff;
+          --color-ansi-green: #98ec65;
+          --color-ansi-magenta: #aa88ff;
+          --color-ansi-red: #ff5555;
+          --color-ansi-yellow: #ffcc33;
+          --color-ansi-bright-white: #ffffff;
+          --color-ansi-bright-black: #777777;
+          --color-ansi-bright-blue: #33bbff;
+          --color-ansi-bright-cyan: #bbecff;
+          --color-ansi-bright-green: #b6f292;
+          --color-ansi-bright-magenta: #cebbff;
+          --color-ansi-bright-red: #ff8888;
+          --color-ansi-bright-yellow: #ffd966;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :host {
+            --color-background: rgb(28, 28, 30);
+            --color-font: white;
+            --color-backdrop: rgb(44, 44, 46);
+            --color-border-shadow: rgba(255, 255, 255, 0.145);
+
+            --color-title-color: #fafafa;
+            --color-stack-h6: rgb(200, 200, 204);
+            --color-stack-headline: rgb(99, 99, 102);
+            --color-stack-notes: #a9a9a9;
+            --color-stack-subline: rgb(121, 121, 121);
+
+            --color-accents-3: rgb(118, 118, 118);
+
+            --color-text-background-red-1: #2a1e1e;
+          }
+        }
+
+        .mono {
+          font-family: var(--font-stack-monospace);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-bottom: var(--size-gap);
+          font-weight: 500;
+          line-height: 1.5;
+        }
+      </style><style>
+        
+  [data-nextjs-dialog-overlay] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 9000;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 15px 0;
+  }
+
+  @media (max-height: 812px) {
+    [data-nextjs-dialog-overlay] {
+      padding: 15px 15px 0;
+    }
+  }
+
+  [data-nextjs-dialog-backdrop] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-backdrop);
+    pointer-events: all;
+    z-index: -1;
+  }
+
+  [data-nextjs-dialog-backdrop-fixed] {
+    cursor: not-allowed;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+        
+  .nextjs-toast {
+    position: fixed;
+    bottom: var(--size-gap-double);
+    left: var(--size-gap-double);
+    max-width: 420px;
+    z-index: 9000;
+    box-shadow: 0px var(--size-gap-double) var(--size-gap-quad)
+      rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 440px) {
+    .nextjs-toast {
+      max-width: 90vw;
+      left: 5vw;
+    }
+  }
+
+  .nextjs-toast-errors-parent {
+    padding: 16px;
+    border-radius: var(--size-gap-quad);
+    font-weight: 500;
+    color: var(--color-ansi-bright-white);
+    background-color: var(--color-ansi-red);
+  }
+
+  .nextjs-static-indicator-toast-wrapper {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border: 0;
+    border-radius: var(--size-gap-triple);
+    background: var(--color-background);
+    color: var(--color-font);
+    transition: all 0.3s ease-in-out;
+    box-shadow:
+      inset 0 0 0 1px var(--color-border-shadow),
+      0 11px 40px 0 rgba(0, 0, 0, 0.25),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .nextjs-static-indicator-toast-wrapper:hover {
+    width: 140px;
+  }
+
+  .nextjs-static-indicator-toast-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  .nextjs-static-indicator-toast-text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+    line-height: 30px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+  }
+
+  .nextjs-static-indicator-toast-wrapper:hover
+    .nextjs-static-indicator-toast-text {
+    opacity: 1;
+  }
+
+  .nextjs-static-indicator-toast-wrapper button {
+    color: var(--color-font);
+    opacity: 0.8;
+    background: none;
+    border: none;
+    margin-left: 6px;
+    margin-top: -2px;
+    outline: 0;
+  }
+
+  .nextjs-static-indicator-toast-wrapper button:focus {
+    opacity: 1;
+  }
+
+  .nextjs-static-indicator-toast-wrapper button > svg {
+    width: 16px;
+    height: 16px;
+  }
+
+        
+  [data-nextjs-dialog] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    outline: none;
+    background: var(--color-background);
+    border-radius: var(--size-gap);
+    box-shadow: 0 var(--size-gap-half) var(--size-gap-double)
+      rgba(0, 0, 0, 0.25);
+    max-height: calc(100% - 56px);
+    overflow-y: hidden;
+  }
+
+  @media (max-height: 812px) {
+    [data-nextjs-dialog-overlay] {
+      max-height: calc(100% - 15px);
+    }
+  }
+
+  @media (min-width: 576px) {
+    [data-nextjs-dialog] {
+      max-width: 540px;
+      box-shadow: 0 var(--size-gap) var(--size-gap-quad) rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media (min-width: 768px) {
+    [data-nextjs-dialog] {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    [data-nextjs-dialog] {
+      max-width: 960px;
+    }
+  }
+
+  [data-nextjs-dialog-banner] {
+    position: relative;
+  }
+  [data-nextjs-dialog-banner].banner-warning {
+    border-color: var(--color-ansi-yellow);
+  }
+  [data-nextjs-dialog-banner].banner-error {
+    border-color: var(--color-ansi-red);
+  }
+
+  [data-nextjs-dialog-banner]::after {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* banner width: */
+    border-top-width: var(--size-gap-half);
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: inherit;
+    border-bottom-color: transparent;
+  }
+
+  [data-nextjs-dialog-content] {
+    overflow-y: auto;
+    border: none;
+    margin: 0;
+    /* calc(padding + banner width offset) */
+    padding: calc(var(--size-gap-double) + var(--size-gap-half))
+      var(--size-gap-double);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  [data-nextjs-dialog-content] > [data-nextjs-dialog-header] {
+    flex-shrink: 0;
+    margin-bottom: var(--size-gap-double);
+  }
+  [data-nextjs-dialog-content] > [data-nextjs-dialog-body] {
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+        
+  [data-nextjs-dialog-left-right] {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  [data-nextjs-dialog-left-right] > nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: var(--size-gap);
+  }
+  [data-nextjs-dialog-left-right] > nav > button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(var(--size-gap-double) + var(--size-gap));
+    height: calc(var(--size-gap-double) + var(--size-gap));
+    font-size: 0;
+    border: none;
+    background-color: rgba(255, 85, 85, 0.1);
+    color: var(--color-ansi-red);
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  [data-nextjs-dialog-left-right] > nav > button > svg {
+    width: auto;
+    height: calc(var(--size-gap) + var(--size-gap-half));
+  }
+  [data-nextjs-dialog-left-right] > nav > button:hover {
+    background-color: rgba(255, 85, 85, 0.2);
+  }
+  [data-nextjs-dialog-left-right] > nav > button:disabled {
+    background-color: rgba(255, 85, 85, 0.1);
+    color: rgba(255, 85, 85, 0.4);
+    cursor: not-allowed;
+  }
+
+  [data-nextjs-dialog-left-right] > nav > button:first-of-type {
+    border-radius: var(--size-gap-half) 0 0 var(--size-gap-half);
+    margin-right: 1px;
+  }
+  [data-nextjs-dialog-left-right] > nav > button:last-of-type {
+    border-radius: 0 var(--size-gap-half) var(--size-gap-half) 0;
+  }
+
+  [data-nextjs-dialog-left-right] > button:last-of-type {
+    border: 0;
+    padding: 0;
+
+    background-color: transparent;
+    appearance: none;
+
+    opacity: 0.4;
+    transition: opacity 0.25s ease;
+
+    color: var(--color-font);
+  }
+  [data-nextjs-dialog-left-right] > button:last-of-type:hover {
+    opacity: 0.7;
+  }
+
+        
+  [data-nextjs-codeframe] {
+    overflow: auto;
+    border-radius: var(--size-gap-half);
+    background-color: var(--color-ansi-bg);
+    color: var(--color-ansi-fg);
+    margin-bottom: var(--size-gap-double);
+  }
+  [data-nextjs-codeframe]::selection,
+  [data-nextjs-codeframe] *::selection {
+    background-color: var(--color-ansi-selection);
+  }
+  [data-nextjs-codeframe] * {
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-stack-monospace);
+  }
+
+  [data-nextjs-codeframe] > * {
+    margin: 0;
+    padding: calc(var(--size-gap) + var(--size-gap-half))
+      calc(var(--size-gap-double) + var(--size-gap-half));
+  }
+  [data-nextjs-codeframe] > div {
+    display: inline-block;
+    width: auto;
+    min-width: 100%;
+    border-bottom: 1px solid var(--color-ansi-bright-black);
+  }
+  [data-nextjs-codeframe] > div > p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0;
+  }
+  [data-nextjs-codeframe] > div > p:hover {
+    text-decoration: underline dotted;
+  }
+  [data-nextjs-codeframe] div > p > svg {
+    width: auto;
+    height: 1em;
+    margin-left: 8px;
+  }
+  [data-nextjs-codeframe] div > pre {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+        
+  [data-nextjs-terminal] {
+    border-radius: var(--size-gap-half);
+    background-color: var(--color-ansi-bg);
+    color: var(--color-ansi-fg);
+  }
+  [data-nextjs-terminal]::selection,
+  [data-nextjs-terminal] *::selection {
+    background-color: var(--color-ansi-selection);
+  }
+  [data-nextjs-terminal] * {
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-stack-monospace);
+  }
+  [data-nextjs-terminal] > * {
+    margin: 0;
+    padding: calc(var(--size-gap) + var(--size-gap-half))
+      calc(var(--size-gap-double) + var(--size-gap-half));
+  }
+
+  [data-nextjs-terminal] pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  [data-with-open-in-editor-link] svg {
+    width: auto;
+    height: var(--size-font-small);
+    margin-left: var(--size-gap);
+  }
+  [data-with-open-in-editor-link] {
+    cursor: pointer;
+  }
+  [data-with-open-in-editor-link]:hover {
+    text-decoration: underline dotted;
+  }
+  [data-with-open-in-editor-link-source-file] {
+    border-bottom: 1px solid var(--color-ansi-bright-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-break: anywhere;
+  }
+  [data-with-open-in-editor-link-import-trace] {
+    margin-left: var(--size-gap-double);
+  }
+  [data-nextjs-terminal] a {
+    color: inherit;
+  }
+
+        
+  h1.nextjs__container_errors_label {
+    font-size: var(--size-font-big);
+    line-height: var(--size-font-bigger);
+    font-weight: bold;
+    margin: var(--size-gap-double) 0;
+  }
+  .nextjs-container-errors-header p {
+    font-size: var(--size-font-small);
+    line-height: var(--size-font-big);
+    white-space: pre-wrap;
+  }
+  .nextjs-container-errors-body footer {
+    margin-top: var(--size-gap);
+  }
+  .nextjs-container-errors-body footer p {
+    margin: 0;
+  }
+
+  .nextjs-container-errors-body small {
+    color: var(--color-font);
+  }
+
+        
+  .nextjs-error-with-static {
+    bottom: calc(var(--size-gap-double) * 4.5);
+  }
+  .nextjs-container-errors-header {
+    position: relative;
+  }
+  .nextjs-container-errors-header > h1 {
+    font-size: var(--size-font-big);
+    line-height: var(--size-font-bigger);
+    font-weight: bold;
+    margin: calc(var(--size-gap-double) * 1.5) 0;
+    color: var(--color-title-h1);
+  }
+  .nextjs-container-errors-header small {
+    font-size: var(--size-font-small);
+    color: var(--color-accents-1);
+    margin-left: var(--size-gap-double);
+  }
+  .nextjs-container-errors-header small > span {
+    font-family: var(--font-stack-monospace);
+  }
+  .nextjs-container-errors-header p {
+    font-size: var(--size-font-small);
+    line-height: var(--size-font-big);
+    white-space: pre-wrap;
+  }
+  .nextjs__container_errors_desc {
+    font-family: var(--font-stack-monospace);
+    padding: var(--size-gap) var(--size-gap-double);
+    border-left: 2px solid var(--color-text-color-red-1);
+    margin-top: var(--size-gap);
+    font-weight: bold;
+    color: var(--color-text-color-red-1);
+    background-color: var(--color-text-background-red-1);
+  }
+  p.nextjs__container_errors__link {
+    margin: var(--size-gap-double) auto;
+    color: var(--color-text-color-red-1);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  p.nextjs__container_errors__notes {
+    margin: var(--size-gap-double) auto;
+    color: var(--color-stack-notes);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .nextjs-container-errors-header > div > small {
+    margin: 0;
+    margin-top: var(--size-gap-half);
+  }
+  .nextjs-container-errors-header > p > a {
+    color: inherit;
+    font-weight: bold;
+  }
+  .nextjs-container-errors-body > h2:not(:first-child) {
+    margin-top: calc(var(--size-gap-double) + var(--size-gap));
+  }
+  .nextjs-container-errors-body > h2 {
+    color: var(--color-title-color);
+    margin-bottom: var(--size-gap);
+    font-size: var(--size-font-big);
+  }
+  .nextjs__container_errors__component-stack {
+    padding: 12px 32px;
+    color: var(--color-ansi-fg);
+    background: var(--color-ansi-bg);
+  }
+  .nextjs-toast-errors-parent {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .nextjs-toast-errors-parent:hover {
+    transform: scale(1.1);
+  }
+  .nextjs-toast-errors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nextjs-toast-errors > svg {
+    margin-right: var(--size-gap);
+  }
+  .nextjs-toast-hide-button {
+    margin-left: var(--size-gap-triple);
+    border: none;
+    background: none;
+    color: var(--color-ansi-bright-white);
+    padding: 0;
+    transition: opacity 0.25s ease;
+    opacity: 0.7;
+  }
+  .nextjs-toast-hide-button:hover {
+    opacity: 1;
+  }
+  .nextjs-container-errors-header
+    > .nextjs-container-build-error-version-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .nextjs__container_errors_inspect_copy_button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--color-ansi-bright-white);
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--size-gap);
+    transition: opacity 0.25s ease;
+  }
+  .nextjs__container_errors__error_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nextjs-data-runtime-error-inspect-link,
+  .nextjs-data-runtime-error-inspect-link:hover {
+    margin: 0 8px;
+    color: inherit;
+  }
+
+        
+  [data-nextjs-call-stack-frame]:not(:last-child),
+  [data-nextjs-component-stack-frame]:not(:last-child) {
+    margin-bottom: var(--size-gap-double);
+  }
+
+  [data-expand-ignore-button]:focus:not(:focus-visible),
+  [data-expand-ignore-button] {
+    background: none;
+    border: none;
+    color: var(--color-font);
+    cursor: pointer;
+    font-size: var(--size-font);
+    margin: var(--size-gap) 0;
+    padding: 0;
+    text-decoration: underline;
+    outline: none;
+  }
+
+  [data-nextjs-data-runtime-error-copy-button],
+  [data-nextjs-data-runtime-error-copy-button]:focus:not(:focus-visible) {
+    position: relative;
+    margin-left: var(--size-gap);
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  [data-nextjs-data-runtime-error-copy-button] > svg {
+    vertical-align: middle;
+  }
+  .nextjs-data-runtime-error-copy-button {
+    color: inherit;
+  }
+  .nextjs-data-runtime-error-copy-button--initial:hover {
+    cursor: pointer;
+  }
+  .nextjs-data-runtime-error-copy-button[aria-disabled='true'] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  .nextjs-data-runtime-error-copy-button--error,
+  .nextjs-data-runtime-error-copy-button--error:hover {
+    color: var(--color-ansi-red);
+  }
+  .nextjs-data-runtime-error-copy-button--success {
+    color: var(--color-ansi-green);
+  }
+
+  [data-nextjs-call-stack-frame] > h3,
+  [data-nextjs-component-stack-frame] > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--font-stack-monospace);
+    font-size: var(--size-font);
+  }
+  [data-nextjs-call-stack-frame] > h3[data-nextjs-frame-expanded='false'] {
+    color: #666;
+    display: inline-block;
+  }
+  [data-nextjs-call-stack-frame] > div,
+  [data-nextjs-component-stack-frame] > div {
+    display: flex;
+    align-items: center;
+    padding-left: calc(var(--size-gap) + var(--size-gap-half));
+    font-size: var(--size-font-small);
+    color: #999;
+  }
+  [data-nextjs-call-stack-frame] > div > svg,
+  [data-nextjs-component-stack-frame] > [role='link'] > svg {
+    width: auto;
+    height: var(--size-font-small);
+    margin-left: var(--size-gap);
+    flex-shrink: 0;
+    display: none;
+  }
+
+  [data-nextjs-call-stack-frame] > div[data-has-source],
+  [data-nextjs-component-stack-frame] > [role='link'] {
+    cursor: pointer;
+  }
+  [data-nextjs-call-stack-frame] > div[data-has-source]:hover,
+  [data-nextjs-component-stack-frame] > [role='link']:hover {
+    text-decoration: underline dotted;
+  }
+  [data-nextjs-call-stack-frame] > div[data-has-source] > svg,
+  [data-nextjs-component-stack-frame] > [role='link'] > svg {
+    display: unset;
+  }
+
+  [data-nextjs-call-stack-framework-icon] {
+    margin-right: var(--size-gap);
+  }
+  [data-nextjs-call-stack-framework-icon='next'] > mask {
+    mask-type: alpha;
+  }
+  [data-nextjs-call-stack-framework-icon='react'] {
+    color: rgb(20, 158, 202);
+  }
+  [data-nextjs-collapsed-call-stack-details][open]
+    [data-nextjs-call-stack-chevron-icon] {
+    transform: rotate(90deg);
+  }
+  [data-nextjs-collapsed-call-stack-details] summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--size-gap);
+    list-style: none;
+  }
+  [data-nextjs-collapsed-call-stack-details] summary::-webkit-details-marker {
+    display: none;
+  }
+
+  [data-nextjs-collapsed-call-stack-details] h3 {
+    color: #666;
+  }
+  [data-nextjs-collapsed-call-stack-details] [data-nextjs-call-stack-frame] {
+    margin-bottom: var(--size-gap-double);
+  }
+
+  [data-nextjs-container-errors-pseudo-html] {
+    position: relative;
+  }
+  [data-nextjs-container-errors-pseudo-html-collapse] {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  [data-nextjs-container-errors-pseudo-html--diff='add'] {
+    color: var(--color-ansi-green);
+  }
+  [data-nextjs-container-errors-pseudo-html--diff='remove'] {
+    color: var(--color-ansi-red);
+  }
+  [data-nextjs-container-errors-pseudo-html--tag-error] {
+    color: var(--color-ansi-red);
+    font-weight: bold;
+  }
+  /* hide but text are still accessible in DOM */
+  [data-nextjs-container-errors-pseudo-html--hint] {
+    display: inline-block;
+    font-size: 0;
+  }
+  [data-nextjs-container-errors-pseudo-html--tag-adjacent='false'] {
+    color: var(--color-accents-1);
+  }
+
+        
+  .nextjs-container-build-error-version-status {
+    flex: 1;
+    text-align: right;
+    font-size: var(--size-font-small);
+  }
+  .nextjs-container-build-error-version-status span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: var(--color-ansi-bright-black);
+  }
+  .nextjs-container-build-error-version-status span.fresh {
+    background: var(--color-ansi-green);
+  }
+  .nextjs-container-build-error-version-status span.stale {
+    background: var(--color-ansi-yellow);
+  }
+  .nextjs-container-build-error-version-status span.outdated {
+    background: var(--color-ansi-red);
+  }
+
+      </style><div role="status" class="nextjs-toast nextjs-static-indicator-toast-wrapper"><div data-nextjs-toast-wrapper="true"><div class="nextjs-static-indicator-toast-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill-rule="evenodd" d="M7.157 0 2.333 9.408l-.56 1.092H7a.25.25 0 0 1 .25.25V16h1.593l4.824-9.408.56-1.092H9a.25.25 0 0 1-.25-.25V0H7.157ZM7 9H4.227L7.25 3.106V5.25C7.25 6.216 8.034 7 9 7h2.773L8.75 12.894V10.75A1.75 1.75 0 0 0 7 9Z" clip-rule="evenodd" style="fill: var(--color-font);"></path></svg></div><div class="nextjs-static-indicator-toast-text">Static route<button class="nextjs-toast-hide-button" aria-label="Hide static indicator"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div></div></div></template></nextjs-portal><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer></body></html>
